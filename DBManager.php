@@ -1,5 +1,13 @@
 <?php
     class DBManager {
+
+        /*テスト接続
+        $dsn = 'mysql:host=mysql***.***.*****;dbname=LA*******-********;charset=utf8mb4';
+        $user = 'LA********';
+        $password = 'P*********'; */
+
+
+
         public function dbConnect(){
             $pdo = new PDO('mysql:host=localhost;dbname=healthy_box;charset=utf8','webuser','abccsd2');
             return $pdo;
