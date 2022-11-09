@@ -1,0 +1,67 @@
+p{
+    margin-bottom: 50px;   
+}
+
+.nav-item{
+    font-size: 20px
+}
+
+h2{
+    text-decoration: underline rgba(69, 152, 91, 0.967);
+}
+
+.syasin{
+    margin-top: 30px;
+    margin-right: 60px;
+    border: solid black;
+}
+
+.syasin-zentai{
+    display: flex;
+}
+
+.box1{
+    width: 1519px;
+    height: 900px;
+    padding-left: 18%;
+}
+
+.box2{
+    width: 1519px;
+    height: 700px;
+    padding-left: 18%;
+}
+
+.button{
+    background-color: rgba(193, 219, 193, 0.881);
+    border: 0cm;
+}
+
+.inputtext {
+    color:rgba(43, 32, 32, 0.76) ;
+    font-size: 18px;
+    border-left: 0;
+    border-right: 0;
+    width: 80px;
+    line-height: 3rem;
+    text-align: center;
+    border: 0cm;
+    padding: 0 10px;
+}
+
+.btn--cart,
+a.btn--cart{
+    color: #fff;
+  background-color: #B6D7C3;
+  margin-top: 5%;
+  margin-left: 75%;
+  width: 20%;
+  max-width: 200px;
+  min-width: 109px;
+  padding: 2%;
+}
+.btn--cart:hover,
+a.btn--cart:hover{
+  color: #fff;
+  background: #B6D7C3;
+}
