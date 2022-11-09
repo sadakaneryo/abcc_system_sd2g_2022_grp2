@@ -35,7 +35,7 @@
 <body>
     <div class="container-fluid">
         <div class="onigiri">
-            <img src="food_onigiri_frame_5104-500x375.png" class="img-fluid">
+            <img src="img/food_onigiri_frame_5104-500x375.png" class="img-fluid">
             <p>
                 確認しました。
             </p>
