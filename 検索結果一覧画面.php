@@ -15,7 +15,7 @@
 <div class="container-fluid">
     <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 20%; height: 800px; background-color: #B6D7C3; float: left;">
         <svg class="bi pe-none me-2" width="40" height="32"></svg>
-        <font style="vertical-align: inherit;"><img src="c242312f152b7a5ce3fd4c26e6fd3e4c.png" class="img-fluid" alt="おにぎり" width="100" height="100" /></font>
+        <font style="vertical-align: inherit;"><img src="img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" class="img-fluid" alt="おにぎり" width="100" height="100" /></font>
       <hr>
       <ul class="nav nav-pills flex-column mb-auto">
         <li>
@@ -32,18 +32,6 @@
     <h1 class="text-center" style="text-decoration: underline; text-decoration-color: #B6D7C3;">検索結果</h1><br>
 
     <div class="row">
-      <div class="col-md-4">
-        <a href="後で入力する">
-          <img style="width: 300px; height: auto;" src="10_洋食弁当-480x320.jpg">
-          <p class="text-right">～弁当　300円</p>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="後で入力する">
-          <img style="width: 300px; height: auto;" src="10_洋食弁当-480x320.jpg">
-          <p class="text-right">～弁当　300円</p>
-        </a>
-      </div>
       <div class="col-md-4">
         <a href="後で入力する">
           <img style="width: 300px; height: auto;" src="10_洋食弁当-480x320.jpg">
