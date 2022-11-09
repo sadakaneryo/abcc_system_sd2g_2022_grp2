@@ -12,7 +12,7 @@
   <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 15%; height: 713px; background-color: #B6D7C3; float: left;">
     <svg class="bi pe-none me-2" width="40" height="32"></svg>
     <div style="text-align: center">
-      <font style="vertical-align: inherit;"><img src="./png/c242312f152b7a5ce3fd4c26e6fd3e4c.png" class="img-fluid" alt="おにぎり" width="150" height="150" /></font>
+      <font style="vertical-align: inherit;"><img src="./img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" class="img-fluid" alt="おにぎり" width="150" height="150" /></font>
     </div>
     <p></p>
       <ul class="nav nav-pills flex-column mb-auto">
@@ -26,7 +26,7 @@
 
   <div class="row">
     <div class="col-md-5">
-      <div class="syasin"><img class="img-fluid" src="png/w1.jpg" alt="写真"></div>
+      <div class="syasin"><img class="img-fluid" src="img/w1.jpg" alt="写真"></div>
       <font size="4S">個数<br>
         <button class="button" id="down" style="color: white;">－</button>
         <input type="text" value="0" class="inputtext" id="textbox">

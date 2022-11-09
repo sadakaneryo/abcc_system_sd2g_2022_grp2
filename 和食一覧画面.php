@@ -12,7 +12,7 @@
     <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 15%; height: 713px; background-color: #B6D7C3; float: left;">
       <svg class="bi pe-none me-2" width="40" height="32"></svg>
       <div style="text-align: center">
-        <font style="vertical-align: inherit;"><img src="./png/c242312f152b7a5ce3fd4c26e6fd3e4c.png" class="img-fluid" alt="おにぎり" width="150" height="150" /></font>
+        <font style="vertical-align: inherit;"><img src="./img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" class="img-fluid" alt="おにぎり" width="150" height="150" /></font>
       </div>
       <p></p>
         <ul class="nav nav-pills flex-column mb-auto">
@@ -25,32 +25,32 @@
     </div>
 
     <p class="text-center" style="font-size: 1%;">　　　　</p><br>
-    <h1 class="text-center" style="text-decoration: underline; text-decoration-color: #B6D7C3;">洋食</h1><br>
+    <h1 class="text-center" style="text-decoration: underline; text-decoration-color: #B6D7C3;">和食</h1><br>
  
     <div class="row">
       <div class="col-md-4">
         <a href="後で入力する">
-          <img style="width: 300px; height: auto;" src="png/y1.jpg">
+          <img style="width: 300px; height: auto;" src="img/w1.jpg">
         </a>
         <p></p>
         <p class="card-title" style="color: gray; text-align:right">カロリー 200kcal</p>
-        <h5 style="text-align:right">弁当　300円</h5>
+        <h5 style="text-align:right">さば弁当　300円</h5>
       </div>
       <div class="col-md-4">
         <a href="後で入力する">
-          <img style="width: 300px; height: auto;" src="png/y2.png">
+          <img style="width: 300px; height: auto;" src="img/w2.jpg">
         </a>
         <p></p>
         <p class="card-title" style="color: gray; text-align:right">カロリー 300kcal</p>
-        <h5 style="text-align:right">弁当　450円</h5>      
+        <h5 style="text-align:right">てんぷら弁当　450円</h5>      
       </div>
       <div class="col-md-4">
         <a href="後で入力する">
-          <img style="width: 300px; height: auto;" src="png/y3.jpg">
+          <img style="width: 300px; height: auto;" src="img/w3.jpg">
         </a>
         <p></p>
         <p class="card-title" style="color: gray; text-align:right">カロリー 380kcal</p>
-        <h5 style="text-align:right">弁当　500円</h5>
+        <h5 style="text-align:right">和風ステーキ弁当　500円</h5>
       </div>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
