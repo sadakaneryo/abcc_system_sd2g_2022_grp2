@@ -29,13 +29,15 @@
     <div class="d-none d-md-block"><!-- pcだけでサイドバー表示 -->
       <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height: 800px; background-color: #B6D7C3; float: left;">
         <svg class="bi pe-none me-2" width="40" height="32"></svg>
-        <font style="vertical-align: inherit;"><img src="img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" alt="おにぎり" width="100" height="100" /></font>
-        <hr>
+        <div style="text-align: center">
+          <font style="vertical-align: inherit;"><img src="img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" alt="おにぎり" width="100" height="100" /></font>
+        </div>
+          <hr>
           <ul class="nav nav-pills flex-column mb-auto">
           <li>
           <a href="#" class="nav-link link-dark">
             <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-            トップへ戻る
+            カートへ戻る
           </font></font></a>
           </li>
           </ul>
