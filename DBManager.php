@@ -48,8 +48,34 @@
             $ps->execute();
         }
 
-        public function searchAll(){
-            
+        public function searchWashoku(){
+            $pdo = $this->dbConnect();
+
+            $sql = "SELECT * FROM bento WHERE jpn = 1";
+            $selectdata = $pdo->query($sql);
+            foreach($selectdata as $row){
+                echo ;
+            }
         }
+
+        public function searchYoushoku(){
+            $pdo = $this->dbConnect();
+
+            $sql = "SELECT * FROM bento WHERE jpn = 0";
+            $selectdata = $pdo->query($sql);
+            foreach($selectdata as $row){
+                echo ;
+            }
+        }
+
+        public function insertOrders(){
+            $pdo = $this->dbConnect();
+
+        }
+
+        public function page(){
+
+        }
+
     }
 ?>

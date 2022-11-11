@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container-fuluid"> 
+    <div class="container-fluid"> 
         <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height:1000px; background-color: #B6D7C3; float: left;">
             <svg class="bi pe-none me-2" width="40" height="32"></svg>
             <font style="vertical-align: inherit;"><img src="img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" alt="おにぎり" width="100" height="100" /></font>
