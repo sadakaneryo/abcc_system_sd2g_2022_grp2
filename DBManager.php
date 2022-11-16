@@ -74,7 +74,7 @@
         }
 
         public function searchBento(){
-            $sql = "SELECT * FROM diary_tbl WHERE diary_detail LIKE ?";
+            $sql = "SELECT * FROM bento WHERE bento_name LIKE ?";
             $ps = $pdo->prepare($sql);
             $ps->bindValue(1,'%'.$_POST['search'].'%',PDO::PARAM_STR);
             $ps->execute();
