@@ -35,7 +35,7 @@
           <hr>
           <ul class="nav nav-pills flex-column mb-auto">
           <li>
-          <a href="#" class="nav-link link-dark">
+          <a href="./カート画面.php" class="nav-link link-dark">
             <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
             カートへ戻る
           </font></font></a>
@@ -55,7 +55,7 @@
         </div>
         <div class="col-6">
           <div class="d-grid gap-2">
-            <a href="http://"><p class="alert-success text-center">カートへ戻る</p></a>
+            <a href="./カート画面.php"><p class="alert-success text-center">カートへ戻る</p></a>
           </div>
         </div>
       </div>
@@ -161,7 +161,7 @@
           <h2>　</h2>
           <h2>　</h2>
           <h2>　</h2>
-          <button><h2>購入する</h2></button>
+          <button onclick="location.href='./購入完了画面.php'"><h2>購入する</h2></button>
         </div>
       </div>
     </div>
@@ -176,7 +176,7 @@
         </div>
         <div class="col-12">
           <div class=text-center>
-            <button class="btn btn-lg">
+            <button onclick="location.href='./購入完了画面.php'" class="btn btn-lg">
               購入する
             </button>
           </div>
