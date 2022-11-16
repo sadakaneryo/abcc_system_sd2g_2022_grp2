@@ -44,7 +44,7 @@
 
         <div class="row">
             <div class="text-center col-md-3 offset-md-9">
-                <button type="button" onclick="location.href='後で入力する'" class="mt-3 btn btn-lg" style="background-color: #B6D7C3;">トップへ戻る</button>
+                <button type="button" onclick="location.href='トップ画面.php'" class="mt-3 btn btn-lg" style="background-color: #B6D7C3;">トップへ戻る</button>
             </div>
         </div>
     </div>
