@@ -81,10 +81,10 @@
             $result = $ps->fetchAll();
             echo "検索キーワード：".$_POST['search']."<br>";
             foreach($result as $row){
-                echo $row['diary_day']."：".$row['diary_title']."：".$row['diary_detail']."<br>";
+                echo ;
             }
             if(count($result)==0){
-                echo "該当の日記はありません<br>";
+                echo ;
             }
         }
     }
