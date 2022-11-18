@@ -29,18 +29,11 @@
         </div>  
     </div>
 
-    <div class="row">
-        <div class="col-lg-4">
-            <img src="img/eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg"width="400">
-        </div>
-        <div class="col-lg-7">
-            <input type="text" class="form-control" placeholder="商品名入力欄"style="width:100%;">
-            
-        </div>
-
-        <div class="col-lg-1">
-            <button type="button" class= "btn" btn-default >検索</button>
-        </div>
+    <img src="img/eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg"width="400">
+      <form action="検索結果一覧画面.php" method="post">
+          <input type="text" class="form-control" placeholder="商品名入力欄"style="width:100%;">
+          <button type="submit" class= "btn" btn-default >検索</button>
+      </form>
 
     </div> 
 
@@ -63,7 +56,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div style="position: relative; display:inline-block;">
-          <img src="img/96d1f5baa4f82e00a23c916d1769cbf2.jpg"onclick="location.href='和食一覧画面.php'" width="750"hspace="20" alt="topimg">
+          <img src="96d1f5baa4f82e00a23c916d1769cbf2.jpg"onclick="location.href='和食一覧画面.php'" width="750"hspace="20" alt="topimg">
           <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 0%; padding: 157px; text-align: center;">
             <h1 style="text-decoration:underline; font-size:100px; margin-left:150px;" >和食</h1>
           </div></div>
@@ -80,7 +73,11 @@
     <div class="row">
       <div class="col-lg-6 offset-lg-6">
         <div style="position: relative; display:inline-block;">
+<<<<<<< HEAD
           <img src="img/bfc238d6fae978f546cc7f3a083f4178..jpeg"onclick="location.href='洋食一覧画面.php'"width="750" alt="topimg">
+=======
+          <img src="bfc238d6fae978f546cc7f3a083f4178..jpeg"width="750" alt="topimg">
+>>>>>>> 1e9e948fb0a3b77f04cc45b9150879c9237b3b5e
           <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 0%; padding: 149px; text-align: center;">
             <h1 style="text-decoration:underline; font-size:100px; margin-left:150px;" >洋食</h1>
           </div></div>
