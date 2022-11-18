@@ -71,6 +71,14 @@
         public function insertOrders(){
             $pdo = $this->dbConnect();
 
+            $sql = "INSERT INTO orders (orders_id, user_id,) VALUES (?,?,)";
+
+            $ps = $pdo->prepare($sql);
+            $ps->bindValue(1, password_hash($pass,PASSWORD_DEFAULT), PDO::PARAM_STR);
+            $ps->bindValue(2, $id, PDO::PARAM_STR);
+           
+
+            $ps->execute();
         }
 
         public function searchBento(){
