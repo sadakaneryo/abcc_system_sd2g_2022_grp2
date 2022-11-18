@@ -63,7 +63,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div style="position: relative; display:inline-block;">
-          <img src="96d1f5baa4f82e00a23c916d1769cbf2.jpg"onclick="location.href='和食一覧画面.php'" width="750"hspace="20" alt="topimg">
+          <img src="img/96d1f5baa4f82e00a23c916d1769cbf2.jpg"onclick="location.href='和食一覧画面.php'" width="750"hspace="20" alt="topimg">
           <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 0%; padding: 157px; text-align: center;">
             <h1 style="text-decoration:underline; font-size:100px; margin-left:150px;" >和食</h1>
           </div></div>
@@ -80,7 +80,7 @@
     <div class="row">
       <div class="col-lg-6 offset-lg-6">
         <div style="position: relative; display:inline-block;">
-          <img src="bfc238d6fae978f546cc7f3a083f4178..jpeg"width="750" alt="topimg">
+          <img src="img/bfc238d6fae978f546cc7f3a083f4178..jpeg"width="750" alt="topimg">
           <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 0%; padding: 149px; text-align: center;">
             <h1 style="text-decoration:underline; font-size:100px; margin-left:150px;" >洋食</h1>
           </div></div>
