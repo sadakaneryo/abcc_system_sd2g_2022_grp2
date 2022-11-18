@@ -80,11 +80,8 @@
     <div class="row">
       <div class="col-lg-6 offset-lg-6">
         <div style="position: relative; display:inline-block;">
-<<<<<<< HEAD
           <img src="img/bfc238d6fae978f546cc7f3a083f4178..jpeg"onclick="location.href='洋食一覧画面.php'"width="750" alt="topimg">
-=======
           <img src="bfc238d6fae978f546cc7f3a083f4178..jpeg"width="750" alt="topimg">
->>>>>>> 1e9e948fb0a3b77f04cc45b9150879c9237b3b5e
           <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 0%; padding: 149px; text-align: center;">
             <h1 style="text-decoration:underline; font-size:100px; margin-left:150px;" >洋食</h1>
           </div></div>
