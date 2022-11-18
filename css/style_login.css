@@ -1,0 +1,64 @@
+.namesize{
+    display: inline-block;
+    width: 9.5em;
+    max-width: 100%;
+    padding: 0.2em;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    margin: 0.5em 0;
+}
+.textboxsize{
+    display: inline-block;
+    width: 20em;
+    max-width: 100%;
+    padding: 0.2em;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    margin: 0.5em 0;
+}
+.jusho{
+    display: inline-block;
+    width: 20em;
+    height: 8em;
+    max-width: 100%;
+    padding: 0.2em;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    margin: 0.5em 0;
+}
+.button {
+    padding: 10px 50px;
+    display: inline-block;
+    border-style: solid;
+    color: black;
+    background-color: rgb(234, 232, 232);
+    border-width:1px;
+    width: 10em;
+    height:3em;
+    border-color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.tbutton {
+    text-align: center;
+ }
+.moji{
+    color: #62d34f;
+}
+.size{
+    font-size: 50px
+}
+.big{
+    font-weight: 600;
+}
+.kuro{
+    color: #000000;
+}
+a{
+    text-decoration: none;
+}
+span {
+    text-decoration: underline;
+}
+.gazoichi{
+    margin: 30px 0 0 -400px;
+}
