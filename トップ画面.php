@@ -29,19 +29,11 @@
         </div>  
     </div>
 
-    <div class="row">
-        <div class="col-lg-4">
-            <img src="img/eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg"width="400">
-        </div>
-        <form action="検索結果一覧画面.php" method="post">
-          <div class="col-lg-7">
-            <input type="text" class="form-control" placeholder="商品名入力欄"style="width:100%;">
-          </div>
-
-          <div class="col-lg-1">
-            <button type="submit" class= "btn" btn-default >検索</button>
-        </form>
-          </div>
+    <img src="img/eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg"width="400">
+      <form action="検索結果一覧画面.php" method="post">
+          <input type="text" class="form-control" placeholder="商品名入力欄"style="width:100%;">
+          <button type="submit" class= "btn" btn-default >検索</button>
+      </form>
 
     </div> 
 
