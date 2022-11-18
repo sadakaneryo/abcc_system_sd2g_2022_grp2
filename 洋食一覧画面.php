@@ -28,30 +28,11 @@
     <h1 class="text-center" style="text-decoration: underline; text-decoration-color: #B6D7C3;">洋食</h1><br>
  
     <div class="row">
-      <div class="col-md-4">
-        <a href="和食洋食詳細画面.php">
-          <img style="width: 300px; height: auto;" src="img/y1.jpg">
-        </a>
-        <p></p>
-        <p class="card-title" style="color: gray; text-align:right">カロリー 200kcal</p>
-        <h5 style="text-align:right">弁当　300円</h5>
-      </div>
-      <div class="col-md-4">
-        <a href="和食洋食詳細画面.php">
-          <img style="width: 300px; height: auto;" src="img/y2.png">
-        </a>
-        <p></p>
-        <p class="card-title" style="color: gray; text-align:right">カロリー 300kcal</p>
-        <h5 style="text-align:right">弁当　450円</h5>      
-      </div>
-      <div class="col-md-4">
-        <a href="和食洋食詳細画面.php">
-          <img style="width: 300px; height: auto;" src="img/y3.jpg">
-        </a>
-        <p></p>
-        <p class="card-title" style="color: gray; text-align:right">カロリー 380kcal</p>
-        <h5 style="text-align:right">弁当　500円</h5>
-      </div>
+    <?php
+    require 'DBManager.php';
+    $dbmng = new DBManager();
+    $dbmng->searchYoushoku();
+    ?>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
