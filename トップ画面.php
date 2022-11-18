@@ -31,7 +31,7 @@
 
     <div class="row">
         <div class="col-lg-4">
-            <img src="eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg"width="400">
+            <img src="img/eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg"width="400">
         </div>
         <div class="col-lg-7">
             <input type="text" class="form-control" placeholder="商品名入力欄"style="width:100%;">
@@ -54,16 +54,16 @@
     <u><font size="5">低カロリーランキング</font></u>
     <div>
       <p><font size="4">1位</font></p>
-      <img src="10_æ´_é£_å¼_å½_-480x320.jpg"width="230"hspace="20">
+      <img src="img/10_æ´_é£_å¼_å½_-480x320.jpg"width="230"hspace="20">
       <p><font size="4">2位</font></p>
-      <img src="15_ä¸¡å´_ã__ã__ã__ã__ã__ã__ã__-480x320.jpg"width="230"hspace="20">
+      <img src="/15_ä¸¡å´_ã__ã__ã__ã__ã__ã__ã__-480x320.jpg"width="230"hspace="20">
     </div>
       
 
     <div class="row">
       <div class="col-lg-6">
         <div style="position: relative; display:inline-block;">
-          <img src="96d1f5baa4f82e00a23c916d1769cbf2.jpg"width="750"hspace="20" alt="topimg">
+          <img src="96d1f5baa4f82e00a23c916d1769cbf2.jpg"onclick="location.href='和食一覧画面.php'" width="750"hspace="20" alt="topimg">
           <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 0%; padding: 157px; text-align: center;">
             <h1 style="text-decoration:underline; font-size:100px; margin-left:150px;" >和食</h1>
           </div></div>
