@@ -19,7 +19,7 @@
       <hr>
       <ul class="nav nav-pills flex-column mb-auto">
         <li>
-          <a href="後で入力" class="nav-link link-dark">
+          <a href="トップ画面.php" class="nav-link link-dark">
             <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
             トップへ戻る
           </font></font></a>
@@ -33,7 +33,7 @@
 
     <div class="row">
       <div class="col-md-4">
-        <a href="後で入力する">
+        <a href="和食洋食詳細画面.php">
           <img style="width: 300px; height: auto;" src="10_洋食弁当-480x320.jpg">
           <p class="text-right">～弁当　300円</p>
         </a>

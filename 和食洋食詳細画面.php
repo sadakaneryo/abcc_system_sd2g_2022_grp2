@@ -17,20 +17,23 @@
     <p></p>
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-          <a href="後で入力" class="nav-link link-dark">
+          <a href="#" onclick="history.back(-1); return false;" class="nav-link link-dark">
             <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
             <font style="vertical-align: inherit;">戻る</font></a>
         </li>
       </ul>
   </div>
-
   <div class="row">
     <div class="col-md-5">
       <div class="syasin"><img class="img-fluid" src="img/w1.jpg" alt="写真"></div>
+      <p></p>
       <font size="4S">個数<br>
-        <button class="button" id="down" style="color: white;">－</button>
-        <input type="text" value="0" class="inputtext" id="textbox">
-        <button class="button" id="up" style="color: white;">＋</button>
+      <div id="app">
+        <button class="button" id="down" style="color: white;" @click="decrement">－</button>
+        <span class="kosu">　{{ count }}　</span>
+        <button class="button" id="up" style="color: white;" @click="increment">＋</button>
+      </div>
+      <p></p>
         <font size="6"><p style="text-align: right;">300円</p></Main></font>
       </font>
     </div>
@@ -41,11 +44,13 @@
       <br>
       <p>説明</p>
       <div class="img-fluid">
-        <a href="" class="btn btn--cart">カートに入れる</a>
+        <a href="カート画面.php" class="btn btn--cart">カートに入れる</a>
       </div>
 
     </div>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
 </html>

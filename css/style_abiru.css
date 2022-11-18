@@ -37,7 +37,7 @@ h2{
     border: 0cm;
 }
 
-.inputtext {
+/* .inputtext {
     color:rgba(43, 32, 32, 0.76) ;
     font-size: 18px;
     border-left: 0;
@@ -47,7 +47,7 @@ h2{
     text-align: center;
     border: 0cm;
     padding: 0 10px;
-}
+} */
 
 .btn--cart,
 a.btn--cart{
