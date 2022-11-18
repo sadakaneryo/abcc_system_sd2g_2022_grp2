@@ -81,13 +81,13 @@
             $ps->execute();
         }
 
-        public function searchBento(){
+        public function searchBento($search){
             $sql = "SELECT * FROM bento WHERE bento_name LIKE ?";
             $ps = $pdo->prepare($sql);
-            $ps->bindValue(1,'%'.$_POST['search'].'%',PDO::PARAM_STR);
+            $ps->bindValue(1,'%'.$search.'%',PDO::PARAM_STR);
             $ps->execute();
             $result = $ps->fetchAll();
-            echo "検索キーワード：".$_POST['search']."<br>";
+            echo "検索キーワード：".$search."<br>";
             foreach($result as $row){
                 echo ;
             }
