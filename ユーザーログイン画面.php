@@ -20,7 +20,7 @@
 				<div class = "card-body" style="background-color:rgb(143, 243, 185);">
                     <div class = "pt-3 pb-3 pl-3 pr-3">
 						<a href="トップ画面.php"><p class = "moji size big">Login</p></a>
-                            <p>ユーザーⅠⅮ　　<input type = "text" name = "username"></p>
+                            <p>ユーザーⅠⅮ　　<input type = "text" name = "userid"></p>
                             <p>パスワード　　　<input type = "text" name = "password"></p>
 					    </div>
                     </div>
