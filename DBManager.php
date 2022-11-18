@@ -103,10 +103,10 @@
             $result = $ps->fetchAll();
             echo "検索キーワード：".$search."<br>";
             foreach($result as $row){
-                echo ;
+                
             }
             if(count($result)==0){
-                echo ;
+                
             }
         }
     }
