@@ -22,8 +22,7 @@
                     <h5>メールアドレス</h5>
                             <div class = "col-12 mb-1">
                                 <div class = "form-floating">
-                                    <input type = "text" class = "form textboxsize" name = "mail">
-                                    
+                                    <input type = "text" class = "form textboxsize" name = "mail">      
                                 </div>
                             </div>
                             <h5>パスワード</h5>

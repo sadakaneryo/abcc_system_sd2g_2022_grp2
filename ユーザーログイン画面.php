@@ -32,7 +32,7 @@
             <a href="新規会員登録画面.php"><h5 class = "kuro">新規会員登録</h5></a>
         </span>
         <div class = "ml-5 gazoichi">
-            <img class = "" src="c242312f152b7a5ce3fd4c26e6fd3e4c.png" alt="riceballs" title="おにぎり" width="8%" height="30%"> 
+            <img class = "" src="img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" alt="riceballs" title="おにぎり" width="8%" height="30%"> 
         </div>
 </div>
 
