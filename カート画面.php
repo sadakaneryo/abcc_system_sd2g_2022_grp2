@@ -140,6 +140,12 @@
             </div>
             <div class="col-md-2">
               <h2 style="text-align: right">削除</h2>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="chk1">
+                <label class="form-check-label" for="chk1">
+                  Default checkbox
+                </label>
+              </div>
             </div>
           </div>
         </div>
