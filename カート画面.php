@@ -22,6 +22,10 @@
       margin: 10;
       padding: 10;
     }
+    .check{
+      transform: scale(2.5);
+      padding-left: 53%;
+    }
   </style>
 </head>
 <body>
@@ -140,11 +144,8 @@
             </div>
             <div class="col-md-2">
               <h2 style="text-align: right">削除</h2>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="chk1">
-                <label class="form-check-label" for="chk1">
-                  Default checkbox
-                </label>
+              <div class="check">
+                <input type="checkbox" name="delite" id="">
               </div>
             </div>
           </div>
@@ -175,6 +176,9 @@
             </div>
             <div class="col-2">
               <h2 style="text-align: right">削除</h2>
+              <div class="check">
+                <input type="checkbox" name="delite" id="">
+              </div>
             </div>
           </div>
         </div>
