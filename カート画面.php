@@ -145,7 +145,7 @@
             <div class="col-md-2">
               <h2 style="text-align: right">削除</h2>
               <div class="check">
-                <input type="checkbox" name="delite" id="">
+                <input type="checkbox" name="delite[]" value="">
               </div>
             </div>
           </div>
@@ -177,7 +177,7 @@
             <div class="col-2">
               <h2 style="text-align: right">削除</h2>
               <div class="check">
-                <input type="checkbox" name="delite" id="">
+                <input type="checkbox" name="delite[]" value="">
               </div>
             </div>
           </div>
