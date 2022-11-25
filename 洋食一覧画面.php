@@ -29,9 +29,21 @@
  
     <div class="row">
     <?php
-    require 'DBManager.php';
-    $dbmng = new DBManager();
-    $dbmng->searchYoushoku();
+        echo '<table>';
+        $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
+        $sql=$pdo->prepare('select * from bento where jpn=0');
+        $sql->execute([]);
+        foreach($sql->fetchAll() as $row){
+            $id=$row['bento_id'];
+            echo '<div class="col-md-4">
+                <a href="和食洋食詳細画面.php?id='.$id.'">
+                <img style="width: 300px; height: auto;" src="'.$row['image'].'">
+                </a>
+                <p></p>
+                <p class="card-title" style="color: gray; text-align:right">カロリー '.$row['calorie'].'kcal</p>
+                <h5 style="text-align:right">'.$row['bento_name'].'弁当　'.$row['price'].'円</h5>
+             </div>';
+        }
     ?>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
