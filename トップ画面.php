@@ -57,31 +57,28 @@
       <img src=""width="230"hspace="20">
     </div>
 
-    <?php
-    $sql2 = "SELECT calorie_rank, image, bento_id
-            FROM(
-              SELECT RANK() OVER(ORDER BY calorie) AS calorie_rank, image, bento_id
-              FROM bento
-            ) AS bento_1
-            WHERE calorie_rank <= 3
-            ORDER BY calorie_rank";
-    $rankdata = $pdo->query($sql2);
-    foreach($selectdata as $row){
-    ?>
-
     <u><font size="5">低カロリーランキング</font></u>
+
     <div>
-      <p><font size="4">1位</font></p>
-      <img src="<?php echo $row['image'];?>"width="230"hspace="20">
-      <p><font size="4">2位</font></p>
-      <img src="<?php echo $row['image'];?>"width="230"hspace="20">
-      <p><font size="4">3位</font></p>
-      <img src="<?php echo $row['image'];?>"width="230"hspace="20">
+      <?php
+      $rank = 1;
+      $sql2 = "SELECT calorie_rank, image, bento_id
+              FROM(
+                SELECT RANK() OVER(ORDER BY calorie) AS calorie_rank, image, bento_id
+                FROM bento
+              ) AS bento_1
+              WHERE calorie_rank <= 3
+              ORDER BY calorie_rank";
+      $rankdata = $pdo->query($sql2);
+      foreach($selectdata as $row){
+        echo '<p><font size="4">'.$rank.'位</font></p>
+              <a href="和食洋食詳細画面.php?id='.$row['bento_id'].'">
+                <img src="'.$row['image'].'"width="230"hspace="20">
+              </a>';
+        $rank++;
+      }
+      ?>
     </div>
-      
-    <?php
-    }
-    ?>
 
     <div class="row">
       <div class="col-lg-6">
