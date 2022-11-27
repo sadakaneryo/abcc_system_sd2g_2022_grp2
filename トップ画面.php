@@ -70,7 +70,7 @@
               WHERE calorie_rank <= 3
               ORDER BY calorie_rank";
       $rankdata = $pdo->query($sql2);
-      foreach($selectdata as $row){
+      foreach($rankdata as $row){
         echo '<p><font size="4">'.$rank.'位</font></p>
               <a href="和食洋食詳細画面.php?id='.$row['bento_id'].'">
                 <img src="'.$row['image'].'"width="230"hspace="20">
