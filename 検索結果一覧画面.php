@@ -32,17 +32,28 @@
     <h1 class="text-center" style="text-decoration: underline; text-decoration-color: #B6D7C3;">検索結果</h1><br>
 
     <div class="row">
-      <div class="col-md-4">
-        <a href="和食洋食詳細画面.php">
-          <img style="width: 300px; height: auto;" src="10_洋食弁当-480x320.jpg">
-          <p class="text-right">～弁当　300円</p>
-        </a>
-      </div>
+      <?php
+        $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
+        $sql="SELECT * FROM bento WHERE bento_name LIKE ?";
+        $ps = $pdo->prepare($sql);
+        $ps->bindValue(1,'%'.$_POST['search'].'%',PDO::PARAM_STR);
+        $ps->execute();
+        $result = $ps->fetchAll();
+        foreach($result as $row){
+          echo '<div class="col-md-4">
+                  <a href="和食洋食詳細画面.php?id='.$row['bento_id'].'">
+                  <img style="width: 300px; height: auto;" src="'.$row['image'].'">
+                  </a>
+                  <p></p>
+                  <p class="card-title" style="color: gray; text-align:right">カロリー '.$row['calorie'].'kcal</p>
+                  <h5 style="text-align:right">'.$row['bento_name'].'弁当　'.$row['price'].'円</h5>
+                </div>';
+        }
+        if(count($result)==0){
+          echo '<p class="text-center" style="color:red;">該当する商品はございません</p>';
+        }
+      ?>
     </div>
-
-    <p class="text-center" style="color:red;">該当する商品はございません</p>
-
-
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
