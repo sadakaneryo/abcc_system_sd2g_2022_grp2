@@ -20,13 +20,13 @@
 
             foreach($searchArray as $row){
                 if(password_verify($pass, $row['user_password']) == true){
-                    $_SESSION['mail'] = $row['user_mail'];
+                    $_SESSION['uid'] = $row['user_id'];
                     $_SESSION['name'] = $row['user_name'];
 
-                    header('Location: menu.php');
+                    header('Location: トップ画面.php');
                     break;
                 }else{
-                    header('Location: login.php');
+                    header('Location: ユーザーログイン画面.php');
                 }
             }
         }

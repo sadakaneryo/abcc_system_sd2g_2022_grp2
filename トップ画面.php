@@ -13,37 +13,34 @@
 
 <body>
     <div class="container-fluid"> 
-        <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height:1000px; background-color: #B6D7C3; float: left;">
-            <svg class="bi pe-none me-2" width="40" height="32"></svg>
-            <font style="vertical-align: inherit;"><img src="img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" alt="おにぎり" width="100" height="100" /></font>
-          <hr>
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li>
-              <a href="logout.php" class="nav-link link-dark">
-                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                ログアウト
-              </font></font></a>
-            </li>
-          </ul>
-          <hr>
-        </div>  
+      <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height:1000px; background-color: #B6D7C3; float: left;">
+          <svg class="bi pe-none me-2" width="40" height="32"></svg>
+          <font style="vertical-align: inherit;"><img src="img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" alt="おにぎり" width="100" height="100" /></font>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <a href="logout.php" class="nav-link link-dark">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              ログアウト
+            </font></font></a>
+          </li>
+        </ul>
+        <hr>
+      </div>  
     </div>
 
     <form action="検索結果一覧画面.php" method="post">
       <div class="form-group">
         <div class="row">
-            <div class="col-lg-4">
-                <img src="img/eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg"width="400">
-            </div>
-            <div class="col-lg-7">
-                <input type="text" class="form-control" placeholder="商品名入力欄"style="width:100%;">
-                
-            </div>
-
-            <div class="col-lg-1">
-                <button type="submit" class= "btn" btn-default >検索</button>
-            </div>
-
+          <div class="col-lg-4">
+              <img src="img/eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg"width="400">
+          </div>
+          <div class="col-lg-7">
+              <input type="text" name="search" class="form-control" placeholder="商品名入力欄" style="width:100%;">
+          </div>
+          <div class="col-lg-1">
+              <button type="submit" class= "btn" btn-default >検索</button>
+          </div>
         </div> 
       </div>
     </form>
@@ -70,14 +67,15 @@
           <img src="img/96d1f5baa4f82e00a23c916d1769cbf2.jpg"onclick="location.href='和食一覧画面.php'" width="750"hspace="20" alt="topimg">
           <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 0%; padding: 157px; text-align: center;">
             <h1 style="text-decoration:underline; font-size:100px; margin-left:150px;" >和食</h1>
-          </div></div>
+          </div>
         </div>
+      </div>
 
-        <div class="col-lg-6"> 
-         <div>
-           <h1 style="text-decoration:underline; font-size:70px; padding-left:auto; padding-right:auto;" >menu</h1>
-         </div>
+      <div class="col-lg-6"> 
+        <div>
+          <h1 style="text-decoration:underline; font-size:70px; padding-left:auto; padding-right:auto;" >menu</h1>
         </div>
+      </div>
     </div>
 
 
@@ -88,12 +86,11 @@
           <img src="bfc238d6fae978f546cc7f3a083f4178..jpeg"width="750" alt="topimg">
           <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 0%; padding: 149px; text-align: center;">
             <h1 style="text-decoration:underline; font-size:100px; margin-left:150px;" >洋食</h1>
-          </div></div>
-    <div>
-
-
-
+          </div>
+        </div>
+      <div>
     </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 
