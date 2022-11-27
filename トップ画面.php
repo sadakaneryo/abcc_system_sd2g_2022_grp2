@@ -45,19 +45,26 @@
       </div>
     </form>
 
+    <?php
+    $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
+    
+    ?>
+
     <u><font size="5">おすすめ</font></u>
     <div>
-      <img src="8d8ffbb4f3b234690c3f42d27d9463d6-720x480@2x.webp"width="230"hspace="20">
-      <img src="11_å__é£_å¼_å½_-480x320.jpg"width="230"hspace="20">
-      <img src="10_æ´_é£_å¼_å½_-480x320.jpg"width="230"hspace="20">
+      <img src=""width="230"hspace="20">
+      <img src=""width="230"hspace="20">
+      <img src=""width="230"hspace="20">
     </div>
 
     <u><font size="5">低カロリーランキング</font></u>
     <div>
       <p><font size="4">1位</font></p>
-      <img src="img/10_æ´_é£_å¼_å½_-480x320.jpg"width="230"hspace="20">
+      <img src=""width="230"hspace="20">
       <p><font size="4">2位</font></p>
-      <img src="/15_ä¸¡å´_ã__ã__ã__ã__ã__ã__ã__-480x320.jpg"width="230"hspace="20">
+      <img src=""width="230"hspace="20">
+      <p><font size="4">3位</font></p>
+      <img src=""width="230"hspace="20">
     </div>
       
 
