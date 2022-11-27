@@ -29,14 +29,12 @@
  
     <div class="row">
     <?php
-        echo '<table>';
         $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
-        $sql=$pdo->prepare('select * from bento where jpn=1');
-        $sql->execute([]);
-        foreach($sql->fetchAll() as $row){
-            $id=$row['bento_id'];
+        $sql = "SELECT * FROM bento WHERE jpn=1";
+        $selectdata = $pdo->query($sql);
+        foreach($selectdata as $row){
             echo '<div class="col-md-4">
-                <a href="和食洋食詳細画面.php?id='.$id.'">
+                <a href="和食洋食詳細画面.php?id='.$row['bento_id'].'">
                 <img style="width: 300px; height: auto;" src="'.$row['image'].'">
                 </a>
                 <p></p>
