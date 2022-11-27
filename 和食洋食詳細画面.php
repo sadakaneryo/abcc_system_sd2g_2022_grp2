@@ -31,29 +31,29 @@
       $ps->bindValue(1,$_GET['id'],PDO::PARAM_STR);
       $ps->execute();
       foreach($ps->fetchAll() as $row){
-          echo '<div class="col-md-5">
-                  <div class="syasin"><img class="img-fluid" src="'.$row['image'].'" alt="写真"></div>
-                  <p></p>
-                  <font size="4S">個数<br>
-                  <div id="app">
-                  <button class="button" id="down" style="color: white;" @click="decrement">－</button>
-                  <span class="kosu">　{{ count }}　</span>
-                  <button class="button" id="up" style="color: white;" @click="increment">＋</button>
-                  </div>
-                  <p></p>
-                  <font size="6"><p style="text-align: right;">'.$row['price'].'円</p></Main></font>
-                  </font>
+        echo '<div class="col-md-5">
+                <div class="syasin"><img class="img-fluid" src="'.$row['image'].'" alt="写真"></div>
+                <p></p>
+                <font size="4S">個数<br>
+                <div id="app">
+                <button class="button" id="down" style="color: white;" @click="decrement">－</button>
+                <span class="kosu">　{{ count }}　</span>
+                <button class="button" id="up" style="color: white;" @click="increment">＋</button>
                 </div>
-            
-                <div class="col-md-7">
-                    <br>
-                    <h2>'.$row['bento_name'].'弁当</h2>
-                    <br>
-                    <p>'.$row['text'].'</p>
-                    <div class="img-fluid">
-                    <a href="カート画面.php" class="btn btn--cart">カートに入れる</a>
-                    </div>
-                </div>';
+                <p></p>
+                <font size="6"><p style="text-align: right;">'.$row['price'].'円</p></Main></font>
+                </font>
+              </div>
+          
+              <div class="col-md-7">
+                  <br>
+                  <h2>'.$row['bento_name'].'弁当</h2>
+                  <br>
+                  <p>'.$row['text'].'</p>
+                  <div class="img-fluid">
+                  <a href="カート画面.php" class="btn btn--cart">カートに入れる</a>
+                  </div>
+              </div>';
       }
     ?>
   </div>
