@@ -62,13 +62,7 @@
     <div>
       <?php
       $rank = 1;
-      $sql2 = "SELECT calorie_rank, image, bento_id
-              FROM(
-                SELECT RANK() OVER(ORDER BY calorie) AS calorie_rank, image, bento_id
-                FROM bento
-              ) AS bento_1
-              WHERE calorie_rank <= 3
-              ORDER BY calorie_rank";
+      $sql2 = "SELECT image, bento_id FROM bento ORDER BY calorie";
       $rankdata = $pdo->query($sql2);
       foreach($rankdata as $row){
         echo '<p><font size="4">'.$rank.'位</font></p>
@@ -76,6 +70,9 @@
                 <img src="'.$row['image'].'"width="230"hspace="20">
               </a>';
         $rank++;
+        if($rank>=4){
+          break;
+        }
       }
       ?>
     </div>
