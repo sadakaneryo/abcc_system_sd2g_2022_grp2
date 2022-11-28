@@ -51,10 +51,22 @@
     ?>
 
     <u><font size="5">おすすめ</font></u>
-    <div>
-      <img src=""width="230"hspace="20">
-      <img src=""width="230"hspace="20">
-      <img src=""width="230"hspace="20">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="和食洋食詳細画面.php?id=001">
+          <img src="img/w1.jpg"width="230"hspace="20">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="和食洋食詳細画面.php?id=002">
+          <img src="img/w2.jpg"width="230"hspace="20">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="和食洋食詳細画面.php?id=004">
+          <img src="img/y2.png"width="230"hspace="20">
+        </a>
+      </div>
     </div>
 
     <u><font size="5">低カロリーランキング</font></u>
