@@ -39,43 +39,50 @@
               <input type="text" name="search" class="form-control" placeholder="商品名入力欄" style="width:100%;">
           </div>
           <div class="col-lg-1">
-              <button type="submit" class= "btn" btn-default >検索</button>
+              <button type="submit" class= "btn">検索</button>
           </div>
         </div> 
       </div>
     </form>
 
-    <?php
-    $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
-    
-    ?>
-
     <u><font size="5">おすすめ</font></u>
-    <div>
-      <img src=""width="230"hspace="20">
-      <img src=""width="230"hspace="20">
-      <img src=""width="230"hspace="20">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="和食洋食詳細画面.php?id=001">
+          <img src="img/w1.jpg"width="230"hspace="20">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="和食洋食詳細画面.php?id=002">
+          <img src="img/w2.jpg"width="230"hspace="20">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="和食洋食詳細画面.php?id=004">
+          <img src="img/y2.png"width="230"hspace="20">
+        </a>
+      </div>
     </div>
 
     <u><font size="5">低カロリーランキング</font></u>
 
-    <div>
+    <div class="row">
       <?php
+      $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
       $rank = 1;
-      $sql2 = "SELECT calorie_rank, image, bento_id
-              FROM(
-                SELECT RANK() OVER(ORDER BY calorie) AS calorie_rank, image, bento_id
-                FROM bento
-              ) AS bento_1
-              WHERE calorie_rank <= 3
-              ORDER BY calorie_rank";
+      $sql2 = "SELECT image, bento_id FROM bento ORDER BY calorie";
       $rankdata = $pdo->query($sql2);
       foreach($rankdata as $row){
-        echo '<p><font size="4">'.$rank.'位</font></p>
-              <a href="和食洋食詳細画面.php?id='.$row['bento_id'].'">
-                <img src="'.$row['image'].'"width="230"hspace="20">
-              </a>';
+        echo '<div class="col-md-4">
+                <p><font size="4">'.$rank.'位</font></p>
+                <a href="和食洋食詳細画面.php?id='.$row['bento_id'].'">
+                  <img src="'.$row['image'].'"width="230"hspace="20">
+                </a>
+              </div>';
         $rank++;
+        if($rank>=4){
+          break;
+        }
       }
       ?>
     </div>

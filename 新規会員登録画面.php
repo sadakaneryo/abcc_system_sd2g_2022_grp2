@@ -14,6 +14,7 @@
 </head>
 <h1 style="text-align:center">会員登録</h1>
 <body style="background-color:rgb(193, 243, 226);">
+<form action="新規会員登録確認画面.php" method = "post">
     <div name="maindiv" class = "container">
         <div class = "row">
             <div class = "col-md-4 offset-md-2">
@@ -56,7 +57,7 @@
                         <h5>郵便番号</h5>
                             <div class = "col-12 mb-1">
                                 <div class = "form-floating">
-                                    <input type = "text" class = "form textboxsize" name = "post">
+                                    <input type = "text" class = "form textboxsize" name = "code">
                                     
                                 </div>
                             </div>
@@ -84,7 +85,7 @@
                     <div class="col-12">
                         <div class="d-grid gap-2">
                             <div class="tbutton">
-                            <a href=新規会員登録確認画面.php class = "button">確認する</a>
+                            <input type = "submit" value ="確認する" class = "button">
                         </div>
                     </div>
                 </div>
@@ -93,9 +94,7 @@
     </div>
 </div>
 </div>
-
-            
-
+</form>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

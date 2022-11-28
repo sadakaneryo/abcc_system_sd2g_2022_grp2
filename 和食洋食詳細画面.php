@@ -51,7 +51,7 @@
                   <br>
                   <p>'.$row['text'].'</p>
                   <div class="img-fluid">
-                  <a href="カート画面.php" class="btn btn--cart">カートに入れる</a>
+                  <a href="カート画面.php?id='.$row['bento_id'].'&count='..'&price='.$row['price'].'" class="btn btn--cart">カートに入れる</a>
                   </div>
               </div>';
       }
