@@ -151,6 +151,49 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <?php //PCのカート表示
+          $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
+          $insql = "INSERT INTO details (order_id,bento_id,kosu,bento_name,price) VALUES (?,?,?,?,?)";
+          $pa = $pdo->prepare($insql);
+          $pa->bindValue(1,'',PDO::PARAM_);
+          $pa->bindValue(2,'',PDO::PARAM_);
+          $pa->bindValue(3,'',PDO::PARAM_);
+          $pa->bindValue(4,'',PDO::PARAM_);
+          $pa->bindValue(5,'',PDO::PARAM_);
+          $p->execute();
+
+          $pdo->query($insql);
+
+          $sesql = "SELECT * FROM details";
+          $ps = $pdo->query($sesql);
+          $result = $ps->fetchAll();
+
+          echo "
+          foreach($result as $row){
+            <div class="\col-md-8 offset-md-2 alert-success">
+                <div class="row">
+                  <div class="\col-md-4">
+                    <h2>row[name]</h2>
+                  </div>
+                  <div class="\col-md-3">
+                    <h2 style="text-align: right">row[kosu]</h2>
+                  </div>
+                  <div class="\col-md-3">
+                    <h2 style="text-align: center">row[price]</h2>
+                  </div>
+                  <div class="\col-md-2">
+                    <div class="check">
+                      <input type="checkbox" name="delite[]" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          }
+          ";
+        ?>
+      </div>
     </div>
   </div>
 
@@ -183,6 +226,49 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <?php //モバイルのカート表示
+          $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
+          $insql = "INSERT INTO details (order_id,bento_id,kosu,bento_name,price) VALUES (?,?,?,?,?)";
+          $pa = $pdo->prepare($insql);
+          $pa->bindValue(1,'',PDO::PARAM_);
+          $pa->bindValue(2,'',PDO::PARAM_);
+          $pa->bindValue(3,'',PDO::PARAM_);
+          $pa->bindValue(4,'',PDO::PARAM_);
+          $pa->bindValue(5,'',PDO::PARAM_);
+          $p->execute();
+
+          $pdo->query($insql);
+
+          $sesql = "SELECT * FROM details";
+          $ps = $pdo->query($sesql);
+          $result = $ps->fetchAll();
+
+          echo "
+          foreach($result as $row){
+            <div class="\col-md-8 offset-md-2 alert-success">
+                <div class="row">
+                  <div class="\col-md-4">
+                    <h2>row[name]</h2>
+                  </div>
+                  <div class="\col-md-3">
+                    <h2 style="text-align: right">row[kosu]</h2>
+                  </div>
+                  <div class="\col-md-3">
+                    <h2 style="text-align: center">row[price]</h2>
+                  </div>
+                  <div class="\col-md-2">
+                    <div class="check">
+                      <input type="checkbox" name="delite[]" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          }
+          ";
+        ?>
+
     </div>
   </div>
 

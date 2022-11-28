@@ -16,5 +16,4 @@
         'count'=>$count+$_REQUEST['count']
     ];
     require 'カート画面.php';
-        //色々処理してheder関数で送る。最後はexで閉じ
 ?>
