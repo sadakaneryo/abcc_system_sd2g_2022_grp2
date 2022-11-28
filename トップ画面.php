@@ -39,16 +39,11 @@
               <input type="text" name="search" class="form-control" placeholder="商品名入力欄" style="width:100%;">
           </div>
           <div class="col-lg-1">
-              <button type="submit" class= "btn" btn-default >検索</button>
+              <button type="submit" class= "btn">検索</button>
           </div>
         </div> 
       </div>
     </form>
-
-    <?php
-    $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
-    
-    ?>
 
     <u><font size="5">おすすめ</font></u>
     <div class="row">
@@ -73,6 +68,7 @@
 
     <div class="row">
       <?php
+      $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
       $rank = 1;
       $sql2 = "SELECT image, bento_id FROM bento ORDER BY calorie";
       $rankdata = $pdo->query($sql2);
