@@ -1,6 +1,25 @@
 <?php
-require_once 'DBManager.php';
 session_start();
-$dbmng = new DBManager();
-$dbmng->loginCheck($_POST['userid'],$_POST['password']);
+
+$pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8mb4','LAA1417400','Pass0000');
+$sql = "SELECT * FROM users WHERE user_id = ?";
+
+$ps = $pdo->prepare($sql);
+$ps->bindValue(1, $_POST['userid'], PDO::PARAM_INT);
+
+$ps->execute();
+
+$searchArray = $ps->fetchAll();
+
+foreach($searchArray as $row){
+    if(password_verify($_POST['password'], $row['user_password']) == true){
+        $_SESSION['uid'] = $row['user_id'];
+        $_SESSION['name'] = $row['user_name'];
+
+        header('Location: トップ画面.php');
+        break;
+    }else{
+        header('Location: ユーザーログイン画面.php');
+    }
+}
 ?>
