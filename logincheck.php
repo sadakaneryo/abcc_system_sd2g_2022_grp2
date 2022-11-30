@@ -16,10 +16,8 @@ foreach($searchArray as $row){
         $_SESSION['name'] = $row['sei'];
 
         header('Location: トップ画面.php');
-        break;
     }else{
         header('Location: ユーザーログイン画面.php');
-        break;
     }
 }
 if(count($searchArray)==0){
