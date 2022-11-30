@@ -13,7 +13,7 @@
 
 <body>
     <div class="container-fluid"> 
-      <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height:1000px; background-color: #B6D7C3; float: left;">
+      <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height:900px; background-color: #B6D7C3; float: left;">
           <svg class="bi pe-none me-2" width="40" height="32"></svg>
           <font style="vertical-align: inherit;"><img src="img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" alt="おにぎり" width="100" height="100" /></font>
         <hr>
@@ -32,10 +32,10 @@
     <form action="検索結果一覧画面.php" method="post">
       <div class="form-group">
         <div class="row">
-          <div class="col-md-4">
-              <img src="img/eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg">
+          <div class="col-md-5">
+              <img src="img/eae8ba6e-608b-4b84-b83a-a525d0429bbd.jpg" style="width:100%;">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
               <input type="text" name="search" class="form-control" placeholder="商品名入力欄" style="width:100%;">
           </div>
           <div class="col-md-2">
@@ -47,17 +47,17 @@
 
     <u><font size="5">おすすめ</font></u>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <a href="和食洋食詳細画面.php?id=001">
           <img src="img/w1.jpg"width="230"hspace="20">
         </a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <a href="和食洋食詳細画面.php?id=002">
           <img src="img/w2.jpg"width="230"hspace="20">
         </a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <a href="和食洋食詳細画面.php?id=004">
           <img src="img/y2.png"width="230"hspace="20">
         </a>
@@ -73,7 +73,7 @@
       $sql2 = "SELECT image, bento_id FROM bento ORDER BY calorie";
       $rankdata = $pdo->query($sql2);
       foreach($rankdata as $row){
-        echo '<div class="col-md-4">
+        echo '<div class="col-md-4 mb-4">
                 <p><font size="4">'.$rank.'位</font></p>
                 <a href="和食洋食詳細画面.php?id='.$row['bento_id'].'">
                   <img src="'.$row['image'].'"width="230"hspace="20">
