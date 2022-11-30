@@ -22,10 +22,6 @@
       margin: 10;
       padding: 10;
     }
-    .check{
-      transform: scale(2.5);
-      padding-left: 53%;
-    }
   </style>
 </head>
 <body>
@@ -144,9 +140,6 @@
             </div>
             <div class="col-md-2">
               <h2 style="text-align: right">削除</h2>
-              <div class="check">
-                <input type="checkbox" name="delite[]" value="">
-              </div>
             </div>
           </div>
         </div>
@@ -172,21 +165,19 @@
 
           echo "
           foreach($result as $row){
-            <div class="\col-md-8 offset-md-2 alert-success">
+            <div class=\"col-md-8 offset-md-2 alert-success\">
                 <div class="row">
-                  <div class="\col-md-4">
+                  <div class=\"col-md-4\">
                     <h2>row[name]</h2>
                   </div>
-                  <div class="\col-md-3">
-                    <h2 style="text-align: right">row[kosu]</h2>
+                  <div class=\"col-md-3\">
+                    <h2 style=\"text-align: right\">row[kosu]</h2>
                   </div>
-                  <div class="\col-md-3">
-                    <h2 style="text-align: center">row[price]</h2>
+                  <div class=\"col-md-3\">
+                    <h2 style=\"text-align: center\">row[price]</h2>
                   </div>
-                  <div class="\col-md-2">
-                    <div class="check">
-                      <input type="checkbox" name="delite[]" value="">
-                    </div>
+                  <div class=\"col-md-2\">
+                    <button onclik=\"カート削除.php?name='$row[name].'\">削除</button>
                   </div>
                 </div>
               </div>
@@ -219,9 +210,6 @@
             </div>
             <div class="col-2">
               <h2 style="text-align: right">削除</h2>
-              <div class="check">
-                <input type="checkbox" name="delite[]" value="">
-              </div>
             </div>
           </div>
         </div>
@@ -247,21 +235,19 @@
 
           echo "
           foreach($result as $row){
-            <div class="\col-md-8 offset-md-2 alert-success">
-                <div class="row">
-                  <div class="\col-md-4">
+            <div class=\"col-md-8 offset-md-2 alert-success\">
+                <div class=\"row\">
+                  <div class=\"col-md-4\">
                     <h2>row[name]</h2>
                   </div>
-                  <div class="\col-md-3">
-                    <h2 style="text-align: right">row[kosu]</h2>
+                  <div class=\"col-md-3\">
+                    <h2 style=\"text-align: right\">row[kosu]</h2>
                   </div>
-                  <div class="\col-md-3">
-                    <h2 style="text-align: center">row[price]</h2>
+                  <div class=\"col-md-3\">
+                    <h2 style=\"text-align: center\">row[price]</h2>
                   </div>
-                  <div class="\col-md-2">
-                    <div class="check">
-                      <input type="checkbox" name="delite[]" value="">
-                    </div>
+                  <div class=\"col-md-2\">
+                    <button onclik=\"カート削除.php?name='$row[name].'\">削除</button>
                   </div>
                 </div>
               </div>
