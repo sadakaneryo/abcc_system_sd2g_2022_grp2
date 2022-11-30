@@ -22,7 +22,7 @@ foreach($searchArray as $row){
         break;
     }
 }
-if(count($result)==0){
+if(count($searchArray)==0){
     header('Location: ユーザーログイン画面.php');
 }
 ?>
