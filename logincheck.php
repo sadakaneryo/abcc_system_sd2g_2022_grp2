@@ -4,7 +4,7 @@ $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox
 $sql = "SELECT * FROM users WHERE user_id = ?";
 
 $ps = $pdo->prepare($sql);
-$ps->bindValue(1, $_POST['userid'], PDO::PARAM_INT);
+$ps->bindValue(1, $_POST['userid'], PDO::PARAM_STR);
 
 $ps->execute();
 
