@@ -4,5 +4,5 @@
     $ps = $pdo->prepare($sql);
     $ps->bindValue(1,$_GET['name'],PDO::PARAM_STR);
     $ps->execute();
-    header("Location:カート画面");
+    header("Location:カート画面.php");
 ?>
