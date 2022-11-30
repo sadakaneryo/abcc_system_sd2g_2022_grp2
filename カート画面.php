@@ -126,11 +126,6 @@
           <div class="row">
             <div class="col-md-4">
               <h2>商品</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
             </div>
             <div class="col-md-3">
               <h2 style="text-align: right">個数</h2>
@@ -196,11 +191,6 @@
           <div class="row">
             <div class="col-2">
               <h2>商品</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
             </div>
             <div class="col-3">
               <h2 style="text-align: right">個数</h2>
