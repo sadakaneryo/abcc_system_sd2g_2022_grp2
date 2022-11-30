@@ -24,30 +24,38 @@
       </ul>
   </div>
   <div class="row">
-    <div class="col-md-5">
-      <div class="syasin"><img class="img-fluid" src="img/w1.jpg" alt="写真"></div>
-      <p></p>
-      <font size="4S">個数<br>
-      <div id="app">
-        <button class="button" id="down" style="color: white;" @click="decrement">－</button>
-        <span class="kosu">　{{ count }}　</span>
-        <button class="button" id="up" style="color: white;" @click="increment">＋</button>
-      </div>
-      <p></p>
-        <font size="6"><p style="text-align: right;">300円</p></Main></font>
-      </font>
-    </div>
-
-    <div class="col-md-7">
-      <br>
-      <h2>さば弁当</h2>
-      <br>
-      <p>説明</p>
-      <div class="img-fluid">
-        <a href="カート画面.php" class="btn btn--cart">カートに入れる</a>
-      </div>
-
-    </div>
+    <?php
+      $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
+      $sql="SELECT * FROM bento WHERE bento_id = ?";
+      $ps = $pdo->prepare($sql);
+      $ps->bindValue(1,$_GET['id'],PDO::PARAM_STR);
+      $ps->execute();
+      foreach($ps->fetchAll() as $row){
+        echo '<div class="col-md-5">
+                <div class="syasin"><img class="img-fluid" src="'.$row['image'].'" alt="写真"></div>
+                <p></p>
+                <font size="4S">個数<br>
+                <div id="app">
+                <button class="button" id="down" style="color: white;" @click="decrement">－</button>
+                <span class="kosu">　{{ count }}　</span>
+                <button class="button" id="up" style="color: white;" @click="increment">＋</button>
+                </div>
+                <p></p>
+                <font size="6"><p style="text-align: right;">'.$row['price'].'円</p></Main></font>
+                </font>
+              </div>
+          
+              <div class="col-md-7">
+                  <br>
+                  <h2>'.$row['bento_name'].'弁当</h2>
+                  <br>
+                  <p>'.$row['text'].'</p>
+                  <div class="img-fluid">
+                  <a href="カート画面.php?id='.$row['bento_id'].'&count='..'&price='.$row['price'].'" class="btn btn--cart">カートに入れる</a>
+                  </div>
+              </div>';
+      }
+    ?>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>

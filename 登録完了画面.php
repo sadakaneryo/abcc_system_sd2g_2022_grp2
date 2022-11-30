@@ -33,6 +33,20 @@
 </head>
  
 <body>
+    <?php
+    $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8mb4','LAA1417400','Pass0000');
+    $sql = "INSERT INTO users (user_id, user_password, phone_number, sei, mei, post_code, user_address) VALUES (?,?,?,?,?,?,?)";
+    $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$_POST['mail'],PDO::PARAM_STR);
+    $ps->bindValue(2,$_POST['pass'],PDO::PARAM_STR);
+    $ps->bindValue(3,$_POST['number'],PDO::PARAM_STR);
+    $ps->bindValue(4,$_POST['sei'],PDO::PARAM_STR);
+    $ps->bindValue(5,$_POST['mei'],PDO::PARAM_STR);
+    $ps->bindValue(6,$_POST['code'],PDO::PARAM_STR);
+    $ps->bindValue(7,$_POST['address'],PDO::PARAM_STR);
+    $ps->execute();
+    ?>
+    
     <div class="container-fluid">
         <div class="onigiri">
             <img src="img/food_onigiri_frame_5104-500x375.png" class="img-fluid">
@@ -43,7 +57,7 @@
  
         <div class="row">
             <div class="text-center col-md-3 offset-md-9">
-                <button type="button" onclick="location.href='後で入力する'" class="mt-3 btn btn-lg" style="background-color: #B6D7C3;">トップへ戻る</button>
+                <button type="button" onclick="location.href='トップ画面.php'" class="mt-3 btn btn-lg" style="background-color: #B6D7C3;">トップへ戻る</button>
             </div>
         </div>
     </div>

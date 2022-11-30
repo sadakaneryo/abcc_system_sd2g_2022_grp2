@@ -20,13 +20,13 @@
 
             foreach($searchArray as $row){
                 if(password_verify($pass, $row['user_password']) == true){
-                    $_SESSION['mail'] = $row['user_mail'];
+                    $_SESSION['uid'] = $row['user_id'];
                     $_SESSION['name'] = $row['user_name'];
 
-                    header('Location: menu.php');
+                    header('Location: トップ画面.php');
                     break;
                 }else{
-                    header('Location: login.php');
+                    header('Location: ユーザーログイン画面.php');
                 }
             }
         }
@@ -54,7 +54,14 @@
             $sql = "SELECT * FROM bento WHERE jpn = 1";
             $selectdata = $pdo->query($sql);
             foreach($selectdata as $row){
-                echo ;
+                echo '<div class="col-md-4">
+                        <a href="和食洋食詳細画面.php">
+                        <img style="width: 300px; height: auto;" src="'.$row['image'].'">
+                        </a>
+                        <p></p>
+                        <p class="card-title" style="color: gray; text-align:right">カロリー '.$row['calorie'].'kcal</p>
+                        <h5 style="text-align:right">'.$row['bento_name'].'弁当　'.$row['price'].'円</h5>
+                    </div>';
             }
         }
 
@@ -64,7 +71,14 @@
             $sql = "SELECT * FROM bento WHERE jpn = 0";
             $selectdata = $pdo->query($sql);
             foreach($selectdata as $row){
-                echo ;
+                echo '<div class="col-md-4">
+                        <a href="和食洋食詳細画面.php">
+                        <img style="width: 300px; height: auto;" src="'.$row['image'].'">
+                        </a>
+                        <p></p>
+                        <p class="card-title" style="color: gray; text-align:right">カロリー '.$row['calorie'].'kcal</p>
+                        <h5 style="text-align:right">'.$row['bento_name'].'弁当　'.$row['price'].'円</h5>
+                    </div>';
             }
         }
 
@@ -89,10 +103,10 @@
             $result = $ps->fetchAll();
             echo "検索キーワード：".$search."<br>";
             foreach($result as $row){
-                echo ;
+                
             }
             if(count($result)==0){
-                echo ;
+                
             }
         }
     }
