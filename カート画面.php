@@ -126,11 +126,6 @@
           <div class="row">
             <div class="col-md-4">
               <h2>商品</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
             </div>
             <div class="col-md-3">
               <h2 style="text-align: right">個数</h2>
@@ -196,11 +191,6 @@
           <div class="row">
             <div class="col-2">
               <h2>商品</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
-              <h2>テスト</h2>
             </div>
             <div class="col-3">
               <h2 style="text-align: right">個数</h2>
@@ -295,11 +285,6 @@
       </div>
     </div>
   </div>
-  
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 </body>
 </html>
