@@ -25,25 +25,25 @@ session_start();
                         <h5>メールアドレス</h5>
                             <div class = "col-12 mb-1">
                                 <div class = "form-floating">
-                                    <input type = "text" class = "form textboxsize" name = "mail"><?php echo $_POST['mail']; ?>
+                                    <input type = "text" class = "form textboxsize" name = "mail" value="<?php echo $_POST['mail']; ?>">
                                 </div>
                             </div>
                             <h5>パスワード</h5>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input  type="text"  class="form textboxsize" name = "pass"><?php echo $_POST['pass']; ?>
+                                    <input  type="text"  class="form textboxsize" name = "pass" value="<?php echo $_POST['pass']; ?>">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input  type="text"  class="form textboxsize" name = "password"><?php echo $_POST['password']; ?>
+                                    <input  type="text"  class="form textboxsize" name = "password" value="<?php echo $_POST['password']; ?>">
                                 </div>
                             </div>
                             <h6>半角英数字、6文字以上。<br>確認の為、２回入力してください</h6>
                             <h5>姓　　　　　　　名</h5>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input type = "text" class = "form namesize" name = "sei"><?php $_POST['sei']; ?>　<input type = "text" class = "form namesize" name = "mei"><?php echo $_POST['mei']; ?>
+                                    <input type = "text" class = "form namesize" name = "sei" value="<?php echo $_POST['sei']; ?>">　<input type = "text" class = "form namesize" name = "mei" value="<?php echo $_POST['mei']; ?>">
                                 </div>
                             </div>
                         </div>
@@ -59,20 +59,20 @@ session_start();
                             <h5>郵便番号</h5>
                             <div class = "col-12 mb-1">
                                 <div class = "form-floating">
-                                    <input type = "text" class = "form textboxsize" name = "code"><?php echo $_POST['code']; ?>
+                                    <input type = "text" class = "form textboxsize" name = "code" value="<?php echo $_POST['code']; ?>">
                                     
                                 </div>
                             </div>
                             <h5>住所</h5>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input  type="text"  class="form jusho" name = "address"><?php echo $_POST['address']; ?>
+                                    <input  type="text"  class="form jusho" name = "address" value="<?php echo $_POST['address']; ?>">
                                 </div>
                             </div>
                             <h5>電話番号</h5>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input  type="text"  class="form textboxsize" name = "number"><?php echo $_POST['number']; ?>
+                                    <input  type="text"  class="form textboxsize" name = "number" value="<?php echo $_POST['number']; ?>">
                                 </div>
                             </div>
                         </div>
