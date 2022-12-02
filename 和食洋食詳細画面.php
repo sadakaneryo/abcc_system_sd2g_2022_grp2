@@ -39,11 +39,11 @@
                 <div class="syasin"><img class="img-fluid" src="'.$row['image'].'" alt="写真"></div>
                 <p></p>
                 <font size="4S">個数<br>
-                <select name="count">'
+                <select name="count">';
                 for($i=0;$i<10;$i++){
-                  echo '<option value="'.$i.'">'.$i.'</option>'
-                }'
-                </select>
+                  echo '<option value="'.$i.'">'.$i.'</option>';
+                };
+        echo   '</select>
                 <p></p>
                 <font size="6"><p style="text-align: right;">'.$row['price'].'円</p></Main></font>
                 </font>
