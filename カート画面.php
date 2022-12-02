@@ -25,9 +25,6 @@
       margin: 10;
       padding: 10;
     }
-    .btn{
-      align="right";
-    }
   </style>
 </head>
 <body>
@@ -176,7 +173,7 @@
                     <h2 style=\"text-align: center\">$row[price]</h2>
                   </div>
                   <div class=\"col-md-2\">
-                    <button class=\"btn\" onclik=\"カート削除.php?name='$row[bento_id].'\">削除</button>
+                    <button onclick=\"カート削除.php?name='$row[bento_id].'\">削除</button>
                   </div>
                 </div>
               </div>";
@@ -237,7 +234,7 @@
                     <h2 style=\"text-align: center\">$row[price]</h2>
                   </div>
                   <div class=\"col-md-2\">
-                    <button onclik=\"カート削除.php?name='$row[bento_id].'\">削除</button>
+                    <button onclick=\"カート削除.php?name='$row[bento_id].'\">削除</button>
                   </div>
                 </div>
               </div>";
