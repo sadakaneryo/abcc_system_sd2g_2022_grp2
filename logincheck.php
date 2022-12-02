@@ -12,12 +12,8 @@ $searchArray = $ps->fetchAll();
 
 foreach($searchArray as $row){
     if($_POST['password']==$row['user_password']){
-        $min = 1000000;
-        $max = 9999999;
-        $code = mt_rand($min,$max);
         $_SESSION['uid'] = $row['user_id'];
         $_SESSION['name'] = $row['sei'];
-        $_SESSION['oid'] = $code;
 
         header('Location: トップ画面.php');
     }else{
