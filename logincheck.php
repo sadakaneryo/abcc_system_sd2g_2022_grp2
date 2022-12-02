@@ -11,9 +11,10 @@ $ps->execute();
 $searchArray = $ps->fetchAll();
 
 foreach($searchArray as $row){
-    if(password_verify($_POST['password'], $row['user_password']) == true){
+    if($_POST['password']==$row['user_password']){
         $_SESSION['uid'] = $row['user_id'];
         $_SESSION['name'] = $row['sei'];
+        $_SESSION['oid'] = 
 
         header('Location: トップ画面.php');
     }else{
