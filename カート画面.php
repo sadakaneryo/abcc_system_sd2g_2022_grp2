@@ -161,9 +161,9 @@
           $ps = $pdo->query($sesql);
           $result = $ps->fetchAll();
 
-          echo "
+          
           foreach($result as $row){
-            <div class=\"col-md-8 offset-md-2 alert-success\">
+            echo "  <div class=\"col-md-8 offset-md-2 alert-success\">
                 <div class=\"row\">
                   <div class=\"col-md-4\">
                     <h2>row[name]</h2>
@@ -178,9 +178,8 @@
                     <button onclik=\"カート削除.php?name='$row[uid].'\">削除</button>
                   </div>
                 </div>
-              </div>
-          }
-          ";
+              </div>"
+          };
         ?>
       </div>
     </div>
