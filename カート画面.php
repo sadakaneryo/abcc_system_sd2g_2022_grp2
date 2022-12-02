@@ -176,8 +176,8 @@
                     <button onclik=\"カート削除.php?name='$row[uid].'\">削除</button>
                   </div>
                 </div>
-              </div>"
-          };
+              </div>";
+          }
         ?>
       </div>
     </div>
@@ -237,8 +237,8 @@
                     <button onclik=\"カート削除.php?name='$row[uid].'\">削除</button>
                   </div>
                 </div>
-              </div>"
-          };
+              </div>";
+          }
         ?>
 
     </div>
