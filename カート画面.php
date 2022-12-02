@@ -1,3 +1,6 @@
+<?php
+    session_start();
+  ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -25,9 +28,6 @@
   </style>
 </head>
 <body>
-  <?php
-    session_start();
-  ?>
   <div class="conteiner-fluid">
     <div class="d-none d-md-block"><!-- pcだけでサイドバー表示 -->
       <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px; height: 800px; background-color: #B6D7C3; float: left;">
