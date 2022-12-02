@@ -84,7 +84,7 @@
                             <div class="col-12">
                                 <div class="d-grid gap-2">
                                     <div class="tbutton">
-                                        <a href=トップ画面.php class = "button">登録</a>
+                                        <a href="登録完了画面.php" class = "button">登録</a>
                                     </div>
                                 </div>
                             </div>
