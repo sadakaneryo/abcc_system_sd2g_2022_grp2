@@ -212,7 +212,7 @@
           $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
           $insql = "INSERT INTO details (order_id,bento_id,kosu,bento_name,price) VALUES (?,?,?,?,?)";
           $pa = $pdo->prepare($insql);
-          $pa->bindValue(1,$_SESSION['uid'],PDO::PARAM_STR);
+          $pa->bindValue(1,$_SESSION['oid'],PDO::PARAM_STR);
           $pa->bindValue(2,$_GET['id'],PDO::PARAM_STR);
           $pa->bindValue(3,$_GET['count'],PDO::PARAM_INT);
           $pa->bindValue(4,$_GET['name'],PDO::PARAM_STR);
@@ -225,9 +225,8 @@
           $ps = $pdo->query($sesql);
           $result = $ps->fetchAll();
 
-          echo "
           foreach($result as $row){
-            <div class=\"col-md-8 offset-md-2 alert-success\">
+            echo "<div class=\"col-md-8 offset-md-2 alert-success\">
                 <div class=\"row\">
                   <div class=\"col-md-4\">
                     <h2>row[name]</h2>
@@ -242,9 +241,8 @@
                     <button onclik=\"カート削除.php?name='$row[uid].'\">削除</button>
                   </div>
                 </div>
-              </div>
-          }
-          ";
+              </div>"
+          };
         ?>
 
     </div>
