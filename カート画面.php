@@ -164,7 +164,7 @@
             echo "  <div class=\"col-md-8 offset-md-2 alert-success\">
                 <div class=\"row\">
                   <div class=\"col-md-4\">
-                    <h2>$row[name]</h2>
+                    <h2>$row[bento_name]</h2>
                   </div>
                   <div class=\"col-md-3\">
                     <h2 style=\"text-align: right\">$row[kosu]</h2>
@@ -173,7 +173,7 @@
                     <h2 style=\"text-align: center\">$row[price]</h2>
                   </div>
                   <div class=\"col-md-2\">
-                    <button onclik=\"カート削除.php?name='$row[uid].'\">削除</button>
+                    <button onclik=\"カート削除.php?name='$row[bento_id].'\">削除</button>
                   </div>
                 </div>
               </div>";
@@ -225,7 +225,7 @@
             echo "<div class=\"col-md-8 offset-md-2 alert-success\">
                 <div class=\"row\">
                   <div class=\"col-md-4\">
-                    <h2>$row[name]</h2>
+                    <h2>$row[bento_name]</h2>
                   </div>
                   <div class=\"col-md-3\">
                     <h2 style=\"text-align: right\">$row[kosu]</h2>
@@ -234,7 +234,7 @@
                     <h2 style=\"text-align: center\">$row[price]</h2>
                   </div>
                   <div class=\"col-md-2\">
-                    <button onclik=\"カート削除.php?name='$row[uid].'\">削除</button>
+                    <button onclik=\"カート削除.php?name='$row[bento_id].'\">削除</button>
                   </div>
                 </div>
               </div>";
