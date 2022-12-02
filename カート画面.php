@@ -217,7 +217,7 @@
           $pa->bindValue(3,$_GET['count'],PDO::PARAM_INT);
           $pa->bindValue(4,$_GET['name'],PDO::PARAM_STR);
           $pa->bindValue(5,$_GET['price'],PDO::PARAM_INT);
-          $p->execute();
+          $pa->execute();
 
           $pdo->query($insql);
 
