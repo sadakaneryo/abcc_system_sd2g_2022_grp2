@@ -155,8 +155,6 @@
           $pa->bindValue(5,$_GET['price'],PDO::PARAM_INT);
           $pa->execute();
 
-          $pdo->query($insql);
-
           $sesql = "SELECT * FROM details";
           $ps = $pdo->query($sesql);
           $result = $ps->fetchAll();
@@ -218,8 +216,6 @@
           $pa->bindValue(4,$_GET['name'],PDO::PARAM_STR);
           $pa->bindValue(5,$_GET['price'],PDO::PARAM_INT);
           $p->execute();
-
-          $pdo->query($insql);
 
           $sesql = "SELECT * FROM details";
           $ps = $pdo->query($sesql);
