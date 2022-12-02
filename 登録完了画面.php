@@ -49,12 +49,6 @@ session_start();
     $ps->bindValue(6,$_POST['code'],PDO::PARAM_STR);
     $ps->bindValue(7,$_POST['address'],PDO::PARAM_STR);
     $ps->execute();
-
-    $length = 7;
-    $max = pow(10, $length) - 1;                    // コードの最大値算出
-    $rand = random_int(0, $max);                    // 乱数生成
-    $code = sprintf('%0'. $length. 'd', $rand);     // 乱数の頭0埋め
-    $_SESSION['oid'] = $code;
     ?>
     
     <div class="container-fluid">
