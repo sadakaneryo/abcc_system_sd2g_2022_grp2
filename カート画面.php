@@ -151,7 +151,7 @@
           $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
           $insql = "INSERT INTO details (order_id,bento_id,kosu,bento_name,price) VALUES (?,?,?,?,?)";
           $pa = $pdo->prepare($insql);
-          $pa->bindValue(1,1,PDO::PARAM_STR);
+          $pa->bindValue(1,"1",PDO::PARAM_STR);
           $pa->bindValue(2,$_POST['id'],PDO::PARAM_STR);
           $pa->bindValue(3,$_POST['count'],PDO::PARAM_INT);
           $pa->bindValue(4,$_POST['name'],PDO::PARAM_STR);
@@ -213,7 +213,7 @@
           $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
           $insql = "INSERT INTO details (order_id,bento_id,kosu,bento_name,price) VALUES (?,?,?,?,?)";
           $pa = $pdo->prepare($insql);
-          $pa->bindValue(1,1,PDO::PARAM_STR);
+          $pa->bindValue(1,"1",PDO::PARAM_STR);
           $pa->bindValue(2,$_POST['id'],PDO::PARAM_STR);
           $pa->bindValue(3,$_POST['count'],PDO::PARAM_INT);
           $pa->bindValue(4,$_POST['name'],PDO::PARAM_STR);
