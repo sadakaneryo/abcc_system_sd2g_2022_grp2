@@ -34,15 +34,16 @@
       $ps->bindValue(1,$_GET['id'],PDO::PARAM_STR);
       $ps->execute();
       foreach($ps->fetchAll() as $row){
-        echo '<div class="col-md-5">
+        echo '  <form action="カート画面.php" method="post">
+                <div class="col-md-5">
                 <div class="syasin"><img class="img-fluid" src="'.$row['image'].'" alt="写真"></div>
                 <p></p>
                 <font size="4S">個数<br>
-                <div id="app">
-                <button class="button" id="down" style="color: white;" @click="decrement">－</button>
-                <span class="kosu">　{{ count }}　</span>
-                <button class="button" id="up" style="color: white;" @click="increment">＋</button>
-                </div>
+                <select name="count">'
+                for($i=0;$i<10;$i++){
+                  echo '<option value="'.$i.'">'.$i.'</option>'
+                }'
+                </select>
                 <p></p>
                 <font size="6"><p style="text-align: right;">'.$row['price'].'円</p></Main></font>
                 </font>
@@ -53,10 +54,15 @@
                   <h2>'.$row['bento_name'].'弁当</h2>
                   <br>
                   <p>'.$row['text'].'</p>
+
+                  <input type="hidden" name="id" value="'.$row['bento_id'].'">
+                  <input type="hidden" name="name" value="'.$row['bento_name'].'">
+                  <input type="hidden" name="price" value="'.$row['price'].'">
                   <div class="img-fluid">
-                  <a href="カート画面.php?id='.$row['bento_id'].'&count=2&price='.$row['price'].'&name='.$row['bento_name'].'" class="btn btn--cart">カートに入れる</a>
+                  <input type="submit" class="btn btn--cart" value="カートに入れる">
                   </div>
-              </div>';
+              </div>
+              </form>';
       }
     ?>
   </div>
