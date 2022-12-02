@@ -1,3 +1,5 @@
+<?php require("./DBManager.php"); ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,25 +24,25 @@
                         <h5>メールアドレス</h5>
                             <div class = "col-12 mb-1">
                                 <div class = "form-floating">
-                                    <input type = "text" class = "form textboxsize" name = "mail">
+                                    <input type = "text" class = "form textboxsize" name = "mail"><?php echo htmlspecialchars($_SESSION['user_id'], ENT_QUOTES); ?>
                                 </div>
                             </div>
                             <h5>パスワード</h5>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input  type="text"  class="form textboxsize" name = "pass">
+                                    <input  type="text"  class="form textboxsize" name = "pass"><?php echo htmlspecialchars($_SESSION['user_password'], ENT_QUOTES); ?>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input  type="text"  class="form textboxsize" name = "password">
+                                    <input  type="text"  class="form textboxsize" name = "password"><?php echo htmlspecialchars($_SESSION['user_password'], ENT_QUOTES); ?>
                                 </div>
                             </div>
                             <h6>半角英数字、6文字以上。<br>確認の為、２回入力してください</h6>
                             <h5>姓　　　　　　　名</h5>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input type = "text" class = "form namesize" name = "sei">　<input type = "text" class = "form namesize" name = "mei">
+                                    <input type = "text" class = "form namesize" name = "sei"><?php echo htmlspecialchars($_SESSION['sei'], ENT_QUOTES); ?>　<input type = "text" class = "form namesize" name = "mei"><?php echo htmlspecialchars($_SESSION['mei'], ENT_QUOTES); ?>
                                 </div>
                             </div>
                         </div>
@@ -56,20 +58,20 @@
                             <h5>郵便番号</h5>
                             <div class = "col-12 mb-1">
                                 <div class = "form-floating">
-                                    <input type = "text" class = "form textboxsize" name = "code">
+                                    <input type = "text" class = "form textboxsize" name = "code"><?php echo htmlspecialchars($_SESSION['code'], ENT_QUOTES); ?>
                                     
                                 </div>
                             </div>
                             <h5>住所</h5>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input  type="text"  class="form jusho" name = "address">
+                                    <input  type="text"  class="form jusho" name = "address"><?php echo htmlspecialchars($_SESSION['address'], ENT_QUOTES); ?>
                                 </div>
                             </div>
                             <h5>電話番号</h5>
                             <div class="col-12">
                                 <div  class="form-floating">
-                                    <input  type="text"  class="form textboxsize" name = "number">
+                                    <input  type="text"  class="form textboxsize" name = "number"><?php echo htmlspecialchars($_SESSION['phone_number'], ENT_QUOTES); ?>
                                 </div>
                             </div>
                         </div>
