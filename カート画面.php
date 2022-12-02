@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-  <title>Document</title>
+  <title>カート画面</title>
 
   <style>
     .cart{
@@ -148,7 +148,7 @@
           $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
           $insql = "INSERT INTO details (order_id,bento_id,kosu,bento_name,price) VALUES (?,?,?,?,?)";
           $pa = $pdo->prepare($insql);
-          $pa->bindValue(1,$_SESSION['oid'],PDO::PARAM_STR);
+          $pa->bindValue(1,$_SESSION['uid'],PDO::PARAM_STR);
           $pa->bindValue(2,$_GET['id'],PDO::PARAM_STR);
           $pa->bindValue(3,$_GET['count'],PDO::PARAM_INT);
           $pa->bindValue(4,$_GET['name'],PDO::PARAM_STR);
@@ -176,8 +176,8 @@
                     <button onclik=\"カート削除.php?name='$row[uid].'\">削除</button>
                   </div>
                 </div>
-              </div>"
-          };
+              </div>";
+          }
         ?>
       </div>
     </div>
@@ -210,7 +210,7 @@
           $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
           $insql = "INSERT INTO details (order_id,bento_id,kosu,bento_name,price) VALUES (?,?,?,?,?)";
           $pa = $pdo->prepare($insql);
-          $pa->bindValue(1,$_SESSION['oid'],PDO::PARAM_STR);
+          $pa->bindValue(1,$_SESSION['uid'],PDO::PARAM_STR);
           $pa->bindValue(2,$_GET['id'],PDO::PARAM_STR);
           $pa->bindValue(3,$_GET['count'],PDO::PARAM_INT);
           $pa->bindValue(4,$_GET['name'],PDO::PARAM_STR);
@@ -237,8 +237,8 @@
                     <button onclik=\"カート削除.php?name='$row[uid].'\">削除</button>
                   </div>
                 </div>
-              </div>"
-          };
+              </div>";
+          }
         ?>
 
     </div>
