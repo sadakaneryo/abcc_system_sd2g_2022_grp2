@@ -173,7 +173,9 @@
                     <h2 style="text-align: center">'.$row['price']*$row['kosu'].'</h2>
                   </div>
                   <div class="col-md-2">
-                    <button onclick="カート削除.php?name='.$row['bento_id'].'">削除</button>
+                    <a href="カート削除.php?name='.$row['bento_id'].'">
+                    <button>削除</button>
+                    </a>
                   </div>
                 </div>
               </div>';
@@ -253,9 +255,11 @@
         </div>
         <div class="col-4">
           <?php
-            $sumsql = "SELECT SUM(price) FROM details";
+            $sumsql = "SELECT order_id,SUM(price) FROM details GROUP BY order_id,SUM(price)";
             $p = $pdo->query($sumsql);
-            echo $p;
+            fetchAll($p as $row){
+              echo $row['SUM(price)'];
+            }
           ?>
         </div>
         <div class="col-4">
