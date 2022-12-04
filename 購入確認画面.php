@@ -109,6 +109,44 @@
             <div class="col-md-4">
               <h2 style="text-align: center">金額</h2>
             </div>
+            <?php //モバイルのカート表示
+          $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
+          $insql = "INSERT INTO details (order_id,bento_id,kosu,bento_name,price) VALUES (?,?,?,?,?)";
+          $pa = $pdo->prepare($insql);
+          $pa->bindValue(1,'1',PDO::PARAM_STR);
+          $pa->bindValue(2,$_POST['id'],PDO::PARAM_STR);
+          $pa->bindValue(3,$_POST['count'],PDO::PARAM_INT);
+          $pa->bindValue(4,$_POST['name'],PDO::PARAM_STR);
+          $pa->bindValue(5,$_POST['price'],PDO::PARAM_INT);
+          $pa->execute();
+
+          $sesql = "SELECT * FROM details";
+          $ps = $pdo->query($sesql);
+          $result = $ps->fetchAll();
+          $sum = 0;
+
+          foreach($result as $row){
+            echo '<div class="col-md-8 offset-md-2 alert-success">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h2>'.$row['bento_name'].'</h2>
+                  </div>
+                  <div class="col-md-3">
+                    <h2 style="text-align: right">'.$row['kosu'].'</h2>
+                  </div>
+                  <div class="col-md-3">
+                    <h2 style="text-align: center">'.$row['price']*$row['kosu'].'円</h2>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="カート削除.php?name='.$row['bento_id'].'">
+                    <button>削除</button>
+                    </a>
+                  </div>
+                </div>
+              </div>';
+              $sum += $row['price']*$row['kosu'];
+          }
+        ?>
           </div>
         </div>
       </div>
