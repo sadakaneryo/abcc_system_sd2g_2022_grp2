@@ -170,10 +170,10 @@
                     <h2 style=\"text-align: right\">$row[kosu]</h2>
                   </div>
                   <div class=\"col-md-3\">
-                    <h2 style=\"text-align: center\">$row[price]</h2>
+                    <h2 style=\"text-align: center\">$row[price]*$row[kosu]</h2>
                   </div>
                   <div class=\"col-md-2\">
-                    <button onclick=\"カート削除.php?name='$row[bento_id].'\">削除</button>
+                    <button onclick=\"カート削除.php?name='$row[bento_id]'\">削除</button>
                   </div>
                 </div>
               </div>";
@@ -222,22 +222,22 @@
           $result = $ps->fetchAll();
 
           foreach($result as $row){
-            echo "<div class=\"col-md-8 offset-md-2 alert-success\">
-                <div class=\"row\">
-                  <div class=\"col-md-4\">
-                    <h2>$row[bento_name]</h2>
+            echo '<div class="col-md-8 offset-md-2 alert-success">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h2>'.$row['bento_name'].'</h2>
                   </div>
-                  <div class=\"col-md-3\">
-                    <h2 style=\"text-align: right\">$row[kosu]</h2>
+                  <div class="col-md-3">
+                    <h2 style="text-align: right">'.$row['kosu'].'</h2>
                   </div>
-                  <div class=\"col-md-3\">
-                    <h2 style=\"text-align: center\">$row[price]</h2>
+                  <div class="col-md-3">
+                    <h2 style="text-align: center">'.$row['price']*$row['kosu'].'</h2>
                   </div>
-                  <div class=\"col-md-2\">
-                    <button onclick=\"カート削除.php?name='$row[bento_id]'\">削除</button>
+                  <div class="col-md-2">
+                    <button onclick="カート削除.php?name='.$row['bento_id'].'">削除</button>
                   </div>
                 </div>
-              </div>";
+              </div>';
           }
         ?>
 
@@ -252,7 +252,11 @@
           <h2>合計</h2>
         </div>
         <div class="col-4">
-
+          <?php
+            $sumsql = "SELECT SUM(price) FROM details";
+            $p = $pdo->query($sumsql);
+            echo $p;
+          ?>
         </div>
         <div class="col-4">
           <h2>　</h2>
