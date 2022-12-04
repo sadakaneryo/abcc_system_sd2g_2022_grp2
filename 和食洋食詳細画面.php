@@ -26,6 +26,7 @@
         </li>
       </ul>
   </div>
+  <form action="カート画面.php" method="post">
   <div class="row">
     <?php
       $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
@@ -34,7 +35,7 @@
       $ps->bindValue(1,$_GET['id'],PDO::PARAM_STR);
       $ps->execute();
       foreach($ps->fetchAll() as $row){
-        echo '<form action="カート画面.php" method="post">
+        echo '
                 <div class="col-md-5">
                 <div class="syasin"><img class="img-fluid" src="'.$row['image'].'" alt="写真"></div>
                 <p></p>
@@ -62,10 +63,11 @@
                   <input type="submit" class="btn btn--cart" value="カートに入れる">
                   </div>
               </div>
-              </form>';
+              ';
       }
     ?>
   </div>
+  </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="./script/script.js"></script>
