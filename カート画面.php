@@ -137,7 +137,7 @@
               <h2 style="text-align: center">金額</h2>
             </div>
             <div class="col-md-2">
-              <h2 style="text-align: right">削除</h2>
+              <h2 style="text-align: right"></h2>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@
           $sesql = "SELECT * FROM details";
           $ps = $pdo->query($sesql);
           $result = $ps->fetchAll();
-
+          $sum = 0;
           
           foreach($result as $row){
             echo '<div class="col-md-8 offset-md-2 alert-success">
@@ -179,6 +179,7 @@
                   </div>
                 </div>
               </div>';
+            $sum += $row['price']*$row['kosu'];
           }
         ?>
       </div>
@@ -201,7 +202,7 @@
               <h2 style="text-align: center">金額</h2>
             </div>
             <div class="col-2">
-              <h2 style="text-align: right">削除</h2>
+              <h2 style="text-align: right"></h2>
             </div>
           </div>
         </div>
@@ -222,6 +223,7 @@
           $sesql = "SELECT * FROM details";
           $ps = $pdo->query($sesql);
           $result = $ps->fetchAll();
+          $sum = 0;
 
           foreach($result as $row){
             echo '<div class="col-md-8 offset-md-2 alert-success">
@@ -236,10 +238,13 @@
                     <h2 style="text-align: center">'.$row['price']*$row['kosu'].'</h2>
                   </div>
                   <div class="col-md-2">
-                    <button onclick="カート削除.php?name='.$row['bento_id'].'">削除</button>
+                    <a href="カート削除.php?name='.$row['bento_id'].'">
+                    <button>削除</button>
+                    </a>
                   </div>
                 </div>
               </div>';
+              $sum += $row['price']*$row['kosu'];
           }
         ?>
 
@@ -255,7 +260,7 @@
         </div>
         <div class="col-4">
           <?php
-          
+            echo $sum.'円';
           ?>
         </div>
         <div class="col-4">
