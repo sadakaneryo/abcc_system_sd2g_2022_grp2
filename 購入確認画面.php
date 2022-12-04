@@ -38,9 +38,9 @@
         <hr>
           <ul class="nav nav-pills flex-column mb-auto">
           <li>
-          <a href="./トップ画面.php" class="nav-link link-dark">
+          <a href="./カート画面.php" class="nav-link link-dark">
             <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-            トップへ戻る
+            カートへ戻る
           </font></font></a>
           </li>
           </ul>
@@ -66,37 +66,16 @@
   </div>
 
 
-  <div class="container-fluid">
-    <div class="d-none d-md-block"><!-- pcだけでアイコン表示 -->
-      <div class="row">
-          <div class="col-4">
-                
-          </div>
-          <div class="col-4">
-              <div class="row">
-                  <div class="col-4">
-                      <div class="cart">
-                          <i class="bi bi-cart"></i>
-                      </div>
-                  </div>
-                  <div class="col-4">
-                      <div class="text">
-                          <h1 class="text-success">カート</h1>
-                      </div>
-                  </div>
-                  <div class="col-4">
-                      <div class="cart">
-                          <i class="bi bi-cart"></i>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-4">
-            
-          </div>
-      </div>
+    <div class="container-fluid">
+        <div class="d-none d-md-block"><!-- pcだけの表示 -->
+        <div class="row">
+            <div class="col-12">
+            <h2 class="text-center">以下の商品を購入しますか？</h2>
+            </div>
+        </div>
+        </div>
     </div>
-  </div>
+
 
 
   <div class="container-fluid">
@@ -108,7 +87,7 @@
           <div class="col-4">
               <div class="row">
                   <div class="col-12">
-                    <h1 class="text-center text-success">カート</h1>
+                    <h1 class="text-center text-success">以下の商品を購入しますか？</h1>
                   </div>
               </div>
           </div>
