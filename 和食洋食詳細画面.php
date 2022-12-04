@@ -35,8 +35,7 @@
       $ps->bindValue(1,$_GET['id'],PDO::PARAM_STR);
       $ps->execute();
       foreach($ps->fetchAll() as $row){
-        echo '
-                <div class="col-md-5">
+        echo '<div class="col-md-5">
                 <div class="syasin"><img class="img-fluid" src="'.$row['image'].'" alt="写真"></div>
                 <p></p>
                 <font size="4S">個数<br>
@@ -62,8 +61,7 @@
                   <div class="img-fluid">
                   <input type="submit" class="btn btn--cart" value="カートに入れる">
                   </div>
-              </div>
-              ';
+              </div>';
       }
     ?>
   </div>
