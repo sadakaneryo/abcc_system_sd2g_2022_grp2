@@ -1,5 +1,6 @@
-><?php
+<?php
 session_start();
+
 $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8mb4','LAA1417400','Pass0000');
 $sql = "SELECT * FROM users WHERE user_id = ?";
 

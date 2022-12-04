@@ -34,7 +34,7 @@
       $ps->bindValue(1,$_GET['id'],PDO::PARAM_STR);
       $ps->execute();
       foreach($ps->fetchAll() as $row){
-        echo '  <form action="カート画面.php" method="post">
+        echo '<form action="カート画面.php" method="post">
                 <div class="col-md-5">
                 <div class="syasin"><img class="img-fluid" src="'.$row['image'].'" alt="写真"></div>
                 <p></p>
@@ -51,7 +51,7 @@
           
               <div class="col-md-7">
                   <br>
-                  <h2>'.$row['bento_name'].'弁当</h2>
+                  <h2>'.$row['bento_name'].'</h2>
                   <br>
                   <p>'.$row['text'].'</p>
 

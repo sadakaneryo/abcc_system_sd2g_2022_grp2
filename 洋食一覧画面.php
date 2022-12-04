@@ -42,7 +42,7 @@
             </a>
             <p></p>
             <p class="card-title" style="color: gray; text-align:right">カロリー '.$row['calorie'].'kcal</p>
-            <h5 style="text-align:right">'.$row['bento_name'].'弁当　'.$row['price'].'円</h5>
+            <h5 style="text-align:right">'.$row['bento_name'].'　　　'.$row['price'].'円</h5>
           </div>';
       }
     ?>
