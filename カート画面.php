@@ -255,11 +255,7 @@
         </div>
         <div class="col-4">
           <?php
-            $sumsql = "SELECT order_id,SUM(price) FROM details GROUP BY order_id,SUM(price)";
-            $p = $pdo->query($sumsql);
-            fetchAll($p as $row){
-              echo $row['SUM(price)'];
-            }
+          
           ?>
         </div>
         <div class="col-4">
