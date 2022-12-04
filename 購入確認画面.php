@@ -70,6 +70,7 @@
         <div class="d-none d-md-block"><!-- pcだけの表示 -->
         <div class="row">
             <div class="col-12">
+            <br>
             <h2 class="text-center">以下の商品を購入しますか？</h2>
             </div>
         </div>
@@ -242,7 +243,7 @@
           <h2>　</h2>
           <h2>　</h2>
           <h2>　</h2>
-          <button onclick="location.href='./購入完了画面.php'"><h2>購入する</h2></button>
+          <button onclick="location.href='./購入.php'"><h2>購入する</h2></button>
         </div>
       </div>
     </div>
@@ -257,7 +258,7 @@
         </div>
         <div class="col-12">
           <div class=text-center>
-            <button  onclick="location.href='./購入完了画面.php'" class="btn btn-lg">
+            <button  onclick="location.href='./購入.php'" class="btn btn-lg">
               購入する
             </button>
           </div>
