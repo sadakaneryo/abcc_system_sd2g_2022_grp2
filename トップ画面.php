@@ -16,7 +16,7 @@
 
 <body>
     <div class="container-fluid"> 
-      <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 20%; height:950px; background-color: #B6D7C3; float: left;">
+      <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 20%; height:900px; background-color: #B6D7C3; float: left;">
           <svg class="bi pe-none me-2" width="40" height="32"></svg>
           <font style="vertical-align: inherit;"><img src="img/c242312f152b7a5ce3fd4c26e6fd3e4c.png" alt="おにぎり" width="100" height="100" /></font>
         <hr>
@@ -95,7 +95,7 @@
       ?>
     </div>
 
-    <h1 style="text-decoration:underline; font-size:70px; padding-left:auto; padding-right:auto; text-align: center;" >menu</h1>
+    <h1 style="text-decoration:underline; font-size:70px; padding-left:auto; padding-right:auto;" >menu</h1>
     <div class="row">
       <div class="col-md-6">
         <div style="position: relative; display:inline-block;">
