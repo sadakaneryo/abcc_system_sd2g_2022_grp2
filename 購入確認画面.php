@@ -150,7 +150,7 @@
                     <h2 style="text-align: right">'.$row['kosu'].'</h2>
                   </div>
                   <div class="col-md-3">
-                    <h2 style="text-align: center">'.$row['price']*$row['kosu'].'円</h2>
+                    <h2 style="text-align: center">'.number_format($row['price']*$row['kosu']).'円</h2>
                   </div>
                   <div class="col-md-2">
                     
@@ -213,7 +213,7 @@
                     <h2 style="text-align: right">'.$row['kosu'].'</h2>
                   </div>
                   <div class="col-md-3">
-                    <h2 style="text-align: center">'.$row['price']*$row['kosu'].'円</h2>
+                    <h2 style="text-align: center">'.number_format($row['price']*$row['kosu']).'円</h2>
                   </div>
                   <div class="col-md-2">
                     
@@ -236,7 +236,7 @@
         </div>
         <div class="col-4">
           <?php
-            echo '<h2>'.$sum.'円</h2>';
+            echo '<h2>'.number_format($sum).'円</h2>';
           ?>
         </div>
         <div class="col-4">
@@ -255,6 +255,9 @@
       <div class="row">
         <div class="col-12">
           <h2>合計</h2>
+          <?php
+            echo '<h2>'.number_format($sum).'円</h2>';
+          ?>
         </div>
         <div class="col-12">
           <div class=text-center>
