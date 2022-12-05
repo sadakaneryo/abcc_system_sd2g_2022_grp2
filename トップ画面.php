@@ -95,7 +95,7 @@
       ?>
     </div>
 
-    <h1 style="text-decoration:underline; font-size:70px; padding-left:auto; padding-right:auto;" >menu</h1>
+    <h1 style="text-decoration:underline; font-size:70px; padding-left:auto; padding-right:auto; text-align: center;" >menu</h1>
     <div class="row">
       <div class="col-md-6">
         <div style="position: relative; display:inline-block;">
