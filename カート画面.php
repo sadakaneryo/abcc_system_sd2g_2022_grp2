@@ -190,7 +190,7 @@
   <div class="container-fluid mt-3">
     <div class="d-md-none"><!-- モバイルのカート表示 -->
       <div class="row">
-        <div class="col-md-8 offset-md-2 alert-success">
+        <div class="col-8 offset-2 alert-success">
           <div class="row">
             <div class="col-3">
               <h2>商品</h2>
