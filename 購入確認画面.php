@@ -164,9 +164,9 @@
     </div>
   </div>
 
-
+<!--
   <div class="container-fluid mt-3">
-    <div class="d-md-none"><!-- モバイルのカート表示 -->
+    <div class="d-md-none">< モバイルのカート表示 
       <div class="row">
         <div class="col-md-8 offset-md-2 alert-success">
           <div class="row">
@@ -185,6 +185,7 @@
           </div>
         </div>
       </div>
+-->
 
       <div class="row">
         <?php //モバイルのカート表示
@@ -210,10 +211,10 @@
                     <h2>'.$row['bento_name'].'</h2>
                   </div>
                   <div class="col-md-3">
-                    <h2 style="text-align: right">'.$row['kosu'].'</h2>
+                    <h2 style="text-align: right">'.$row['kosu'].'個</h2>
                   </div>
                   <div class="col-md-3">
-                    <h2 style="text-align: center">'.number_format($row['price']*$row['kosu']).'円</h2>
+                    <h2 style="text-align: right">'.number_format($row['price']*$row['kosu']).'円</h2>
                   </div>
                   <div class="col-md-2">
                     
