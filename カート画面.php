@@ -186,9 +186,9 @@
     </div>
   </div>
 
-
+<!--
   <div class="container-fluid mt-3">
-    <div class="d-md-none"><!-- モバイルのカート表示 -->
+    <div class="d-md-none">< モバイルのカート表示 
       <div class="row">
         <div class="col-8 offset-2 alert-success">
           <div class="row">
@@ -207,7 +207,7 @@
           </div>
         </div>
       </div>
-
+      -->
       <div class="row">
         <?php //モバイルのカート表示
           $pdo = new PDO('mysql:host=mysql208.phy.lolipop.lan;dbname=LAA1417400-healthybox;charset=utf8','LAA1417400','Pass0000');
