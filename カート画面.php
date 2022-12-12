@@ -232,10 +232,10 @@
                     <h2>'.$row['bento_name'].'</h2>
                   </div>
                   <div class="col-md-3">
-                    <h2 style="text-align: right">'.$row['kosu'].'</h2>
+                    <h2 style="text-align: right">'.$row['kosu'].'個</h2>
                   </div>
                   <div class="col-md-3">
-                    <h2 style="text-align: center">'.number_format($row['price']*$row['kosu']).'円</h2>
+                    <h2 style="text-align: right">'.number_format($row['price']*$row['kosu']).'円</h2>
                   </div>
                   <div class="col-md-2">
                     <a href="カート削除.php?name='.$row['bento_id'].'">
