@@ -42,7 +42,7 @@
         foreach($result as $row){
           echo '<div class="col-md-4">
                   <a href="和食洋食詳細画面.php?id='.$row['bento_id'].'">
-                  <img style="width: 300px; height: auto;" src="'.$row['image'].'">
+                  <img style="width: 300px; height: 250px;" src="'.$row['image'].'">
                   </a>
                   <p></p>
                   <p class="card-title" style="color: gray; text-align:right">カロリー '.$row['calorie'].'kcal</p>

@@ -15,7 +15,7 @@ session_start();
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="./css/style_login.css">
 </head>
-<h1 style="text-align:center">確認</h1>
+<h1 style="text-align:center">以下の内容を送信してよろしいですか？</h1>
 <body style="background-color:rgb(193, 243, 226);">
 <form action="登録完了画面.php" method = "post">
     <div name="maindiv" class = "container">
