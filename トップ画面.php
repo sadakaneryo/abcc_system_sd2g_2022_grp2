@@ -58,17 +58,17 @@
     <div class="row">
       <div class="col-md-4 mb-4">
         <a href="和食洋食詳細画面.php?id=001">
-          <img src="img/w1.jpg"width="230"hspace="20">
+          <img src="img/w1.jpg"width="230"height="180"hspace="20">
         </a>
       </div>
       <div class="col-md-4 mb-4">
         <a href="和食洋食詳細画面.php?id=002">
-          <img src="img/w2.jpg"width="230"hspace="20">
+          <img src="img/w2.jpg"width="230"height="180"hspace="20">
         </a>
       </div>
       <div class="col-md-4 mb-4">
         <a href="和食洋食詳細画面.php?id=004">
-          <img src="img/y2.png"width="230"hspace="20">
+          <img src="img/y2.png"width="230"height="180"hspace="20">
         </a>
       </div>
     </div>
@@ -84,7 +84,7 @@
         echo '<div class="col-md-4 mb-4">
                 <p><font size="4">'.$rank.'位</font></p>
                 <a href="和食洋食詳細画面.php?id='.$row['bento_id'].'">
-                  <img src="'.$row['image'].'"width="230"hspace="20">
+                  <img src="'.$row['image'].'"width="230"height="180"hspace="20">
                 </a>
               </div>';
         $rank++;
