@@ -226,18 +226,18 @@
           $sum = 0;
 
           foreach($result as $row){
-            echo '<div class="col-md-8 offset-md-2 alert-success">
+            echo '<div class="col-8 offset-2 alert-success">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-4">
                     <h2>'.$row['bento_name'].'</h2>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-3">
                     <h2 style="text-align: right">'.$row['kosu'].'</h2>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-3">
                     <h2 style="text-align: center">'.number_format($row['price']*$row['kosu']).'円</h2>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-2">
                     <a href="カート削除.php?name='.$row['bento_id'].'">
                     <button>削除</button>
                     </a>
